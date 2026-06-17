@@ -1,46 +1,141 @@
 import React, { useState } from "react"
-import g1 from "../../assets/portfolio/g1.png"
-import g2 from "../../assets/portfolio/g2.png"
-import g3 from "../../assets/portfolio/g3.png"
-import g4 from "../../assets/portfolio/g4.png"
-import g5 from "../../assets/portfolio/g5.png"
-import g6 from "../../assets/portfolio/g6.png"
-import g7 from "../../assets/portfolio/g7.png"
-import g8 from "../../assets/portfolio/g8.png"
-import g9 from "../../assets/portfolio/g2.png"
+import g1 from "../../assets/portfolio/1.webp"
+import g2 from "../../assets/portfolio/2.webp"
+import g3 from "../../assets/portfolio/3.webp"
+import g4 from "../../assets/portfolio/4.webp"
+import g5 from "../../assets/portfolio/5.webp"
+import g6 from "../../assets/portfolio/6.webp"
+import g7 from "../../assets/portfolio/7.webp"
+import g8 from "../../assets/portfolio/8.webp"
+import g9 from "../../assets/portfolio/9.webp"
+import g10 from "../../assets/portfolio/10.webp"
 
-import s1 from "../../assets/portfolio/s1.png"
-import s2 from "../../assets/portfolio/s2.png"
-import s3 from "../../assets/portfolio/s3.png"
+import s1 from "../../assets/portfolio/s1.webp"
+import s2 from "../../assets/portfolio/s2.webp"
+import s3 from "../../assets/portfolio/s3.webp"
+import s4 from "../../assets/portfolio/s4.webp"
+import s5 from "../../assets/portfolio/s5.webp"
+import s6 from "../../assets/portfolio/s6.webp"
+import s7 from "../../assets/portfolio/s7.webp"
+import s8 from "../../assets/portfolio/s8.webp"
+import s9 from "../../assets/portfolio/s9.webp"
+import s10 from "../../assets/portfolio/s10.webp"
 
 const Portfolio = () => {
   const [view, setView] = useState("grid")
 
   const galleryData = [
-    g1, g2, g3, g4, g5, g6, g7, g8, g9,
-    g1
+    {img:g1,
+      link:"/soupherb"
+    },
+    {img:g2,
+      link:"/loma-dental"
+    },
+    {img:g3,
+      link:"/wefanss"
+    },
+    {img:g4,
+      link:"/rekha-bright-still"
+    },
+    {img:g5,
+      link:"/dr-gaikwad"
+    },
+    {img:g6,
+      link:"/akirhs"
+    },
+    {img:g7,
+      link:"/ca-nair"
+    },
+    {img:g8,
+      link:"/lanova"
+    },
+    {img:g9,
+      link:"/worldflair"
+    },
+    {img:g10,
+      link:"/verteacal-blendz"
+    }
   ]
 
   const stack = [
     {
       id: 1,
-      title: "Soupherb",
+      title: "SoupHerb",
       para: "Discover our unique approach to achieving success.",
       img: s1,
+      link:"/soupherb",
       tags: ["AI", "Machine Learning", "Deep Learning"],
     },
     {
       id: 2,
-      title: "Dr.Gaikwad",
+      title: "LOMA ",
       para: "Creative solutions that deliver business growth.",
       img: s2,
+      link:"/loma-dental",
       tags: ["Branding", "UI UX", "SEO"],
     },
     {
       id: 3,
-      title: "Verteacal Blendz",
+      title: "WE FANSS ",
       para: "Modern strategies with impactful results.",
       img: s3,
+      link:"/wefanss",
+      tags: ["React", "Node", "Cloud"],
+    },
+    {
+      id: 4,
+      title: "RBS",
+      para: "Modern strategies with impactful results.",
+      img: s4,
+      link:"/rekha-bright-still",
+      tags: ["React", "Node", "Cloud"],
+    },
+    {
+      id: 5,
+      title: "Dr Gaikwad ",
+      para: "Modern strategies with impactful results.",
+      img: s5,
+      link:"/dr-gaikwad",
+      tags: ["React", "Node", "Cloud"],
+    },
+    {
+      id: 6,
+      title: "AKIRHS",
+      para: "Modern strategies with impactful results.",
+      img: s6,
+      link:"/akirhs",
+      tags: ["React", "Node", "Cloud"],
+    },
+    {
+      id: 7,
+      title: "CA NAIR",
+      para: "Modern strategies with impactful results.",
+      img: s7,
+      link:"/ca-nair",
+      tags: ["React", "Node", "Cloud"],
+    },
+    {
+      id: 8,
+      title: "LA NOVA ",
+      para: "Modern strategies with impactful results.",
+      img: s8,
+      link:"/lanova",
+      tags: ["React", "Node", "Cloud"],
+    },
+    {
+      id: 9,
+      title: "WORLD FLAIR",
+      para: "Modern strategies with impactful results.",
+      img: s9,
+      link:"/worldflair",
+      tags: ["React", "Node", "Cloud"],
+    },
+    {
+      id: 10,
+      title: "VB ",
+      para: "Modern strategies with impactful results.",
+      img: s10,
+      link:"/verteacal-blendz",
       tags: ["React", "Node", "Cloud"],
     },
   ]
@@ -87,14 +182,14 @@ const Portfolio = () => {
       {view === "grid" && (
         <div className="container-fluid p-0" id="grid">
           <div className="custom-gallery">
-            {galleryData.map((img, index) => (
-              <div className="item" data-gsap key={index}>
-                <img src={img} alt="" />
+            {galleryData.map((item, index) => (
+              <a href={item.link} className="item" data-gsap key={index}>
+                <img src={item.img} alt="" />
 
                 <div className="read">
-                  <a href="#!">View Project</a>
+                  <a href={item.link}>View Project</a>
                 </div>
-              </div>
+              </a>
             ))}
           </div>
         </div>
@@ -104,7 +199,7 @@ const Portfolio = () => {
       {view === "list" && (
         <div className="container" id="list">
           {stack.map((item, index) => (
-            <a href="#!" data-gsap className="portitem" key={index}>
+            <a href={item.link} data-gsap className="portitem" key={index}>
               <figure>
                 <img src={item.img} alt="" />
               </figure>

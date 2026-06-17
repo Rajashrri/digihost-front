@@ -21,21 +21,28 @@ import lanova12 from "../../assets/soup/lanova12.webp"
 import FashionSlider from "../soupherb/Slider"
 // import FashionSlider from "./Slider"
 
-import img11 from "../../assets/portfolio/g1.png";
-import img21 from "../../assets/portfolio/g2.png";
-import img31 from "../../assets/portfolio/g3.png";
+import soupherb from "../../assets/portfolio/soupherb.webp";
+// import lanova from "../../assets/portfolio/lanova.webp";
+import wefanss from "../../assets/portfolio/wefanss.webp";
+import rekhabrightstill from "../../assets/portfolio/rekha-bright-still.webp";
+import drgaikwad from "../../assets/portfolio/dr-gaikwad.webp";
+import akirhs from "../../assets/portfolio/akirhs.webp";
+import canair from "../../assets/portfolio/ca-nair.webp";
+import lomadental from "../../assets/portfolio/loma-dental.webp";
+import worldflair from "../../assets/portfolio/worldflair.webp";
+import verteacalblendz from "../../assets/portfolio/verteacal-blendz.webp";
 
     const slides = [
-    { img: img11, name: "SoupHerb", link:"/soupherb" },
-    { img: img21, name: "lanova", link:"/lanova" },
-    { img: img31, name: "WE FANSS" , link:"/wefanss"},
-    { img: img11, name: "RBS ",link:"/rekha-bright-still" },
-    { img: img21, name: "Dr Gaikwad" , link:"/dr-gaikwad"},
-    { img: img31, name: "AKIRHS" , link:"/akirhs"},
-    { img: img11, name: "CA NAIR", link:"/ca-nair" },
-    { img: img21, name: "LOMA Dental", link:"/loma-dental" },
-    { img: img31, name: "WORLD FLAIR", link:"/worldflair" },
-    { img: img31, name: "VB", link:"/verteacal-blendz" },
+      // { img: lanova, name: "lanova", link:"/lanova" },
+      { img: worldflair, name: "WORLD FLAIR", link:"/worldflair" },
+      { img: verteacalblendz, name: "VB", link:"/verteacal-blendz" },
+      { img: soupherb, name: "SoupHerb", link:"/soupherb" },
+      { img: lomadental, name: "LOMA Dental", link:"/loma-dental" },
+      { img: wefanss, name: "WE FANSS" , link:"/wefanss"},
+      { img: rekhabrightstill, name: "RBS ",link:"/rekha-bright-still" },
+      { img: drgaikwad, name: "Dr Gaikwad" , link:"/dr-gaikwad"},
+      { img: akirhs, name: "AKIRHS" , link:"/akirhs"},
+      { img: canair, name: "CA NAIR", link:"/ca-nair" },
   ];
 
 

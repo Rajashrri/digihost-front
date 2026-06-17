@@ -3,7 +3,22 @@ import Portfolio from '../components/portfolio/Portfolio'
 
 const PortfolioPage = () => {
   return (
-    <div>
+    <div className='error portfolooi'>
+          <div className="breadcrumb h-auto ">
+                      <ul>
+                      
+                          <React.Fragment >
+                            <li>
+                              <a href="">Home</a>
+                            </li>
+                            <li>||</li>
+                            <li>
+                              <a href="">404</a>
+                            </li>
+                          </React.Fragment>
+                  
+                      </ul>
+                    </div>
         <div className="beadcrumb">
             <h2 data-gsap>Portfolios</h2>
             <h3 data-gsap>Showcase of Your Best Work</h3>

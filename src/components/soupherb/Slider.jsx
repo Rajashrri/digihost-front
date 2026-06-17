@@ -69,7 +69,7 @@ const FashionSlider = ({slides}) => {
 >
         {slides?.map((item, index) => (
             <SwiperSlide key={index}>
-              <a href="#!" className="fashion-card">
+              <a href={item.link} className="fashion-card">
                 <div className="imgover">
                 <img src={item.img} alt="" />
                 </div>

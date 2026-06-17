@@ -1053,6 +1053,9 @@ align-self: stretch;
   margin-bottom: 116px;
 }
 
+.portfolooi .beadcrumb h2 {
+  margin-top: 175px;
+}
 .beadcrumb h2 {
   margin-top: 222px;
   text-align: center;
@@ -3884,6 +3887,7 @@ color: #757575;
 
 .content img {
   /* width: 500px; */
+  width: 100%;
   /* margin-top: 20px; */
 }
 
@@ -4867,6 +4871,9 @@ bottom: 20%;
   .slidebtn{
     top: 40%;
   }
+  .portfolooi .beadcrumb h2 {
+    margin-top: 90px;
+}
 .slidebtn div svg{
   height: 100%;
 }
