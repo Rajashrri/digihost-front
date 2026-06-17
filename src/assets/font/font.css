@@ -1,0 +1,166 @@
+/* Altone Thin */
+@font-face {
+  font-family: 'Altone';
+  src: url('../font/Altone/Altone-Thin.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Altone';
+  src: url('../font/Altone/Altone-ThinOblique.ttf') format('truetype');
+  font-weight: 100;
+  font-style: italic;
+}
+
+/* Altone Extra Light */
+@font-face {
+  font-family: 'Altone';
+  src: url('../font/Altone/Altone-ExtraLight.ttf') format('truetype');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Altone';
+  src: url('../font/Altone/Altone-ExtraLightOblique.ttf') format('truetype');
+  font-weight: 200;
+  font-style: italic;
+}
+
+/* Altone Light */
+@font-face {
+  font-family: 'Altone';
+  src: url('../font/Altone/Altone-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Altone';
+  src: url('../font/Altone/Altone-LightOblique.ttf') format('truetype');
+  font-weight: 300;
+  font-style: italic;
+}
+
+/* Altone Regular */
+@font-face {
+  font-family: 'Altone';
+  src: url('../font/Altone/Altone-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Altone';
+  src: url('../font/Altone/Altone-Oblique.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+}
+
+/* Altone Medium */
+@font-face {
+  font-family: 'Altone';
+  src: url('../font/Altone/Altone-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Altone';
+  src: url('../font/Altone/Altone-MediumOblique.ttf') format('truetype');
+  font-weight: 500;
+  font-style: italic;
+}
+
+/* Altone SemiBold */
+@font-face {
+  font-family: 'Altone';
+  src: url('../font/Altone/Altone-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Altone';
+  src: url('../font/Altone/Altone-SemiBoldOblique.ttf') format('truetype');
+  font-weight: 600;
+  font-style: italic;
+}
+
+/* Altone Bold */
+@font-face {
+  font-family: 'Altone';
+  src: url('../font/Altone/Altone-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Altone';
+  src: url('../font/Altone/Altone-BoldOblique.ttf') format('truetype');
+  font-weight: 700;
+  font-style: italic;
+}
+
+/* Altone ExtraBold */
+@font-face {
+  font-family: 'Altone';
+  src: url('../font/Altone/Altone-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Altone';
+  src: url('../font/Altone/Altone-ExtraBoldOblique.ttf') format('truetype');
+  font-weight: 800;
+  font-style: italic;
+}
+
+/* Altone Heavy */
+@font-face {
+  font-family: 'Altone';
+  src: url('../font/Altone/Altone-Heavy.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Altone';
+  src: url('../font/Altone/Altone-HeavyOblique.ttf') format('truetype');
+  font-weight: 900;
+  font-style: italic;
+}
+
+/* BigBang Font */
+
+@font-face {
+  font-family: 'Arista Pro';
+  src: url('../font/arista_pro/Arista-Pro-Alternate-Bold-trial.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Arista Pro';
+  src: url('../font/arista_pro/Arista-Pro-Alternate-Fat-trial.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Arista Pro';
+  src: url('../font/arista_pro/Arista-Pro-Alternate-Light-trial.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Arista Pro';
+  src: url('../font/arista_pro/Arista-Pro-Bold-trial.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Arista Pro';
+  src: url('../font/arista_pro/Arista-Pro-Family-CC-BY-NCLicensepdf.pdf') format('truetype');
+}
+@font-face {
+  font-family: 'Arista Pro';
+  src: url('../font/arista_pro/Arista-Pro-Fat-trial.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Arista Pro';
+  src: url('../font/arista_pro/Arista-Pro-Light-trial.ttf') format('truetype');
+}
+
