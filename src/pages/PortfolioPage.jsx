@@ -9,11 +9,11 @@ const PortfolioPage = () => {
                       
                           <React.Fragment >
                             <li>
-                              <a href="">Home</a>
+                              <a href="/">Home</a>
                             </li>
                             <li>||</li>
                             <li>
-                              <a href="">404</a>
+                              <a href="">Portfolios</a>
                             </li>
                           </React.Fragment>
                   
