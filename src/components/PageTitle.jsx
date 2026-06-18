@@ -2,7 +2,7 @@ import { useEffect } from "react";
 
 const PageTitle = ({ title }) => {
   useEffect(() => {
-    document.title = `Diigiihost | ${title}`;
+    document.title = ` ${title} | DIIGIIHOST`;
   }, [title]);
 
   return null;

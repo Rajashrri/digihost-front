@@ -1,8 +1,8 @@
-import { useState } from 'react'
+import { useState  } from 'react'
 import './App.css'
 import './assets/font/font.css'
 import HomePage from './pages/HomePage'
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { BrowserRouter, Route, Routes  } from 'react-router-dom'
 import Layout from './Layout'
 import PortfolioPage from './pages/PortfolioPage'
 import SoupHerb from './pages/SoupHerb'
@@ -26,10 +26,34 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import useGsapAos from './components/hooks/useGsapAos'
 import Error from './pages/Error'
 import Thankyou from './pages/Thankyou'
+import PrivacyPolicy from './pages/PrivacyPolicy'
+import TermsConditions from './pages/TermsConditions'
+import loader from "./assets/loader.gif"
 
 function App() {
   const [count, setCount] = useState(0)
     useGsapAos();
+
+
+     const [loading, setLoading] = useState(true)
+
+  useGsapAos()
+
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false)
+    }, 2000)
+  }, [])
+
+  if (loading) {
+    return (
+      <div className="loader-wrapper">
+        <div className="loader">
+             <img src={loader} alt="Loading..." />
+        </div>
+      </div>
+    )
+  }
 
   return (
     <>
@@ -64,6 +88,8 @@ function App() {
 
             <Route path='/*' element={<Error />} />
             <Route path='/thank-you' element={<Thankyou />} />
+            <Route path='/privacy-policy' element={<PrivacyPolicy />} />
+            <Route path='/terms-conditions' element={<TermsConditions />} />
 
           </Route>
         </Routes>

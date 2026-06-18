@@ -23,7 +23,7 @@ const BlogDetailsPage = () => {
       if (response.data.success) {
         setBlogTitle(response.data.data.title);
 
-        document.title = `${response.data.data.title} | Blog Details | DiigiiHost`;
+        document.title = `${response.data.data.title} | Blog Details | DIIGIIHOST`;
       }
     } catch (error) {
       console.log(error);
@@ -32,7 +32,7 @@ const BlogDetailsPage = () => {
 
   return (
     <>
-    <PageTitle title={blogTitle}/>
+    {/* <PageTitle title={blogTitle}/> */}
       <Breadcrumb
         breadcrumb={[
           "Home",

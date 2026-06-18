@@ -116,9 +116,8 @@ const Details = () => {
         </figure>
 
         <h3 className="dettext" data-gsap>
-          where ancient Ayurvedic wisdom meets delicious,
-          nourishing soups crafted to balance your body
-          and delight your taste buds.
+       An Ayurvedic wellness identity designed around
+ancient intelligence and modern accessibility.
         </h3>
 
         <div className="bigtextcontainer" ref={sectionRef}>
@@ -141,15 +140,23 @@ const Details = () => {
 
           <div className="paradiv">
             <p data-gsap>
-              Despite decades of credibility, the brand presence
-              no longer reflected the scale and precision of the business.
+              Soupherb carried a powerful philosophy —
+bringing traditional Ayurvedic nourishment
+into a format relevant for modern lifestyles.
             </p>
 
             <p data-gsap>
-              The communication felt dated. The positioning lacked
-              distinction. And their custom manufacturing expertise
-              was getting lost in a commoditized market.
+              But the brand presence lacked cohesion.
+The communication felt fragmented.
+And the depth of the product philosophy
+was not translating digitally.
             </p>
+            <p data-gsap>
+              The challenge was to create a system
+that felt rooted in tradition,
+while remaining contemporary and accessible.
+            </p>
+           
           </div>
 
           <div className="soupimgsgal">
@@ -191,17 +198,24 @@ const Details = () => {
 
           <div className="paradiv">
             <p data-gsap>
-              We approached the brand through the lens of industrial trust.
+             We approached the brand
+through the idea of forgotten intelligence.
             </p>
 
             <p data-gsap>
-              Not flashy marketing. But clarity, structure, and confidence.
+           The wisdom of ingredients.
+The rhythm of mindful nourishment.
+The balance between body and lifestyle.
             </p>
 
             <p data-gsap>
-              From the website system to the visual language and communication,
-              every touchpoint was redesigned to feel dependable, modern,
-              and precise.
+      From the identity system
+to packaging,
+website experience,
+product storytelling,
+and digital communication —
+every touchpoint was designed
+to feel natural, informed, and intentional.
             </p>
           </div>
 
@@ -221,20 +235,14 @@ const Details = () => {
           <h3 data-gsap>The Identity</h3>
 
           <div className="paradiv">
-            <p data-gsap>
-              The resulting identity balances industrial robustness
-              with modern presentation.
-            </p>
-
-            <p data-gsap>
-              Structured layouts. Confident typography.
-              Controlled visual language.
-            </p>
-
-            <p data-gsap>
-              A system designed to communicate capability
-              without unnecessary complexity.
-            </p>
+            <p data-gsap>The resulting identity balances
+heritage with modern clarity.</p>
+            <p data-gsap> Earth-led visual language.
+Clean typography.
+Minimal but warm presentation.
+Ingredient-focused storytelling.</p>
+            <p data-gsap>A system designed to make wellness
+feel approachable rather than overwhelming.</p>
           </div>
 
           <div className="soupimgsgal">
@@ -261,13 +269,13 @@ const Details = () => {
           <h3 data-gsap>The Outcome</h3>
 
           <div className="paradiv">
-            <p data-gsap>
-              Rekha Bright Steels now communicates with greater authority, clearer positioning, and stronger consistency across platforms.
-            </p>
-
-            <p data-gsap>
-              The business evolved from appearing like a conventional supplier to feeling like a long-term industrial partner.
-            </p>
+            <p data-gsap>Soupherb now communicates
+with greater consistency,
+stronger emotional resonance,
+and a far more distinctive wellness presence. </p>
+            <p data-gsap>The brand evolved
+from appearing like a niche product line
+to feeling like a thoughtful wellness ecosystem.</p>
 
 
           </div>
@@ -345,9 +353,20 @@ const Details = () => {
           <h3 data-gsap>Precis</h3>
 
           <div className="paradiv">
-           <p data-gsap>The goal was never to redesign the legacy, but to present it with greater clarity.</p>
-           <p data-gsap>Every decision focused on strengthening trust, modernizing perception, and reflecting the discipline the business was already built on.</p>
-           <p data-gsap>The result is a brand presence that feels experienced, grounded, and future-ready.</p>
+           <p data-gsap>Wellness brands today
+often compete through trends.</p>
+           <p data-gsap>But the strongest ones
+are built on philosophy.
+</p>
+           <p data-gsap>Every decision across the system
+was designed to preserve authenticity,
+improve accessibility,
+and create a stronger emotional connection
+with modern consumers.</p>
+           <p data-gsap>The result is a brand presence
+that feels grounded,
+conscious,
+and timelessly relevant.</p>
 
           </div>
 

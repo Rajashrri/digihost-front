@@ -1,11 +1,12 @@
 import React from 'react'
 import Portfolio from '../components/portfolio/Portfolio'
 import PageTitle from '../components/PageTitle'
+import Breadcrumb from '../components/common/Breadcrumb'
 
 const PortfolioPage = () => {
   return (<>
   <PageTitle title="Portfolios" />
-    <div className='error portfolooi'>
+    {/* <div className='error portfolooi'>
           <div className="breadcrumb h-auto ">
                       <ul>
                       
@@ -25,10 +26,12 @@ const PortfolioPage = () => {
             <h2 data-gsap>Portfolios</h2>
             <h3 data-gsap>Showcase of Your Best Work</h3>
 
-        </div>
+        </div> */}
+                <Breadcrumb breadcrumb={["Home","Portfolios"]}/>
         <Portfolio/>
         
-    </div></>
+    {/* </div> */}
+    </>
   )
 }
 
