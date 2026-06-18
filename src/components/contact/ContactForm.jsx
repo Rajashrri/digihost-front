@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { contactApi } from "../../utils/frontApi";
 const ContactForm = () => {
 
-
+const [isLoading, setIsLoading] = useState(false);
     const navigate = useNavigate();
 
 const [formData, setFormData] = useState({
@@ -56,6 +56,8 @@ const handleSubmit = async (e) => {
 
   if (!validate()) return;
 
+  setIsLoading(true);
+
   try {
     const response = await contactApi(formData);
 
@@ -64,6 +66,8 @@ const handleSubmit = async (e) => {
     }
   } catch (error) {
     console.log(error);
+  } finally {
+    setIsLoading(false);
   }
 };
   return (
@@ -115,59 +119,7 @@ const handleSubmit = async (e) => {
 )}
             </div>
           </div>
-          {/* <div className="col-lg-6">
-                            <div className="contt">
-                                <input type="text"  placeholder='Phone'/>
-                            </div>
-                        </div> */}
-          {/* <div className="col-lg-6">
-                           <div className="contt custon select position-relative">
-                            <select className="form-select">
-                                <option value="">Select</option>
-                            </select>
-
-                            <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="24"
-                                height="24"
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                className="select-arrow"
-                            >
-                                <path
-                                d="M6 9L12 15L18 9"
-                                stroke="#444444"
-                                strokeWidth="2"
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                                />
-                            </svg>
-                            </div>
-                        </div>
-                        <div className="col-lg-6">
-                           <div className="contt custon select position-relative">
-                            <select className="form-select">
-                                <option value="">Select</option>
-                            </select>
-
-                            <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="24"
-                                height="24"
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                className="select-arrow"
-                            >
-                                <path
-                                d="M6 9L12 15L18 9"
-                                stroke="#444444"
-                                strokeWidth="2"
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                                />
-                            </svg>
-                            </div>
-                        </div> */}
+          
           <div className="col-lg-12">
             <div className="contt">
              <textarea
@@ -180,8 +132,23 @@ const handleSubmit = async (e) => {
             </div>
           </div>
           <div className="col-lg-12">
-           <button type="submit" className="btn1">
-  Submit
+          <button
+  type="submit"
+  className="btn1"
+  disabled={isLoading}
+>
+  {isLoading ? (
+    <>
+      <span
+        className="spinner-border spinner-border-sm me-2"
+        role="status"
+        aria-hidden="true"
+      ></span>
+      Submitting...
+    </>
+  ) : (
+    "Submit"
+  )}
 </button>
           </div>
         </div>
