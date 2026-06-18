@@ -1,8 +1,10 @@
 import React from 'react'
 import astro from "../assets/astro.png"
+import PageTitle from '../components/PageTitle'
 
 const Error = () => {
-  return (
+  return (<>
+  <PageTitle title="Error" />
     <div className='error'>
            <div className="breadcrumb h-auto ">
                       <ul>
@@ -95,7 +97,7 @@ const Error = () => {
                 </div>
             </div>
         </div>
-    </div>
+    </div></>
   )
 }
 

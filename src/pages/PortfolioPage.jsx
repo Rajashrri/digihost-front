@@ -1,8 +1,10 @@
 import React from 'react'
 import Portfolio from '../components/portfolio/Portfolio'
+import PageTitle from '../components/PageTitle'
 
 const PortfolioPage = () => {
-  return (
+  return (<>
+  <PageTitle title="Portfolios" />
     <div className='error portfolooi'>
           <div className="breadcrumb h-auto ">
                       <ul>
@@ -26,7 +28,7 @@ const PortfolioPage = () => {
         </div>
         <Portfolio/>
         
-    </div>
+    </div></>
   )
 }
 

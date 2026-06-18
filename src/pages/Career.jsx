@@ -5,10 +5,12 @@ import CareerCta from '../components/career/CareerCta'
 import CurrentOpenings from '../components/career/CurrentOpenings'
 import HiringProcess from '../components/career/HiringProcess'
 import CultureSection from '../components/career/CultureSection'
+import PageTitle from '../components/PageTitle'
 
 const Career = () => {
   return (
     <>
+    <PageTitle title="Career" />
      <Breadcrumb breadcrumb={["Home","Career"]}/>
      <CultureSection/>
      <YouWillBe/>

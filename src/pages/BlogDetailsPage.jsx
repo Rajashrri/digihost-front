@@ -5,6 +5,7 @@ import Breadcrumb from "../components/common/Breadcrumb";
 import BlogDetails from "../components/blog/BlogDetails";
 
 import { getBlogDetailsApi } from "../utils/frontApi";
+import PageTitle from "../components/PageTitle";
 
 const BlogDetailsPage = () => {
   const { slug } = useParams();
@@ -31,6 +32,7 @@ const BlogDetailsPage = () => {
 
   return (
     <>
+    <PageTitle title={blogTitle}/>
       <Breadcrumb
         breadcrumb={[
           "Home",

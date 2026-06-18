@@ -10,10 +10,12 @@ import LogoReveal from '../components/about/LogoReveal'
 import AboutMissionVision from '../components/about/AboutMissionVision'
 import BrandGravity from '../components/about/BrandGravity'
 import Timeline from '../components/about/Timeline'
+import PageTitle from '../components/PageTitle'
 
 const AboutPage = () => {
   return (
     <>
+      <PageTitle title="About" />
     <Breadcrumb breadcrumb={["Home","About"]}/>
     <AboutText/>
     <Timeline/>

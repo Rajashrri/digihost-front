@@ -1,8 +1,10 @@
 import React from 'react'
 import jack from "../assets/jack.png"
+import PageTitle from '../components/PageTitle'
 
 const Thankyou = () => {
-  return (
+  return (<>
+  <PageTitle title="Thank You" />
     <div className='error'>
            <div className="breadcrumb h-auto ">
                       <ul>
@@ -45,7 +47,7 @@ const Thankyou = () => {
                 </div>
             </div>
         </div>
-    </div>
+    </div></>
   )
 }
 
