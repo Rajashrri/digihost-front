@@ -40,17 +40,13 @@ const Popupform = ({ showPopup, setShowPopup }) => {
                     <label>Mobile Number *</label>
                     <input type="text" placeholder="Enter number" />
                   </div>
-                </div>
-              </div>
-
-              <div className="col-lg-12">
-                <div className="form-grid">
+              
                   <div className="form-group">
                     <label>Total Experience *</label>
                     <input type="text" placeholder="2 Years" />
                   </div>
 
-                  <div className="form-group">
+                  {/* <div className="form-group">
                     <label>Applying For Position *</label>
 
                     <div className="select-wrap">
@@ -67,9 +63,9 @@ const Popupform = ({ showPopup, setShowPopup }) => {
                     </svg>
                       </span>
                     </div>
-                  </div>
+                  </div> */}
 
-                  <div className="form-group">
+                  {/* <div className="form-group">
                     <label>Current Location *</label>
                 <div className="select-wrap">
                     <select>
@@ -84,12 +80,17 @@ const Popupform = ({ showPopup, setShowPopup }) => {
                     </svg>
                       </span>
                     </div>
-                  </div>
+                  </div> */}
                 </div>
               </div>
 
               <div className="col-lg-12">
-                <div className="form-grid">
+                   <div className="form-grid">
+                 <div className="form-group">
+                    <label>Current Location *</label>
+                    <input type="text" placeholder="Mumbai " />
+                  </div>
+             
                   <div className="form-group fileup">
                     <label>Upload Resume *</label>
                     <input type="file" />
@@ -97,12 +98,20 @@ const Popupform = ({ showPopup, setShowPopup }) => {
                       <span>Choose A File</span>
                     </div>
                   </div>
+                  </div>
 
-                  <div className="form-group">
+               
+           
+              </div>
+              <div className="col-lg-12">
+             
+                    <div className="form-group">
                     <label>Cover Letter / Message</label>
                     <textarea rows="4"></textarea>
                   </div>
-                </div>
+
+               
+           
               </div>
             </div>
 
