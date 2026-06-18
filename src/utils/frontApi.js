@@ -33,6 +33,18 @@ export const contactApi = (data) => {
   return frontApi.post("/add-contact", data);
 };
 
+export const careerApi = (data) => {
+  return frontApi.post(
+    `/career`,
+    data,
+    {
+      headers: {
+        "Content-Type": "multipart/form-data",
+      },
+    }
+  );
+};
+
 // =============================
 // OPTIONAL ERROR HANDLER
 // =============================
