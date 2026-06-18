@@ -71,7 +71,7 @@ const SmoothSlider = () => {
   useEffect(() => {
     const auto = setInterval(() => {
       nextSlide()
-    }, 4000)
+    }, 6000)
 
     return () => clearInterval(auto)
   }, [])
