@@ -1833,6 +1833,16 @@ a:hover {
   /* 28.8px */
   margin-top: 37px;
 }
+.detaicontent h3 {
+  color: var(--accent2, #B1EBE0);
+  font-family: var(--Altone);
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+  /* 28.8px */
+  margin-top: 37px;
+}
 
 .relatedblog {
   margin-top: 91px;
@@ -4287,6 +4297,9 @@ margin-bottom: 0;
 }
 .culture-center{
   height: 100%;
+}
+.footerconainer{
+  padding: 0 16px;
 }
 .process-item{
   padding: 0;
