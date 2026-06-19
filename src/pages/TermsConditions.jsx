@@ -6,7 +6,11 @@ const TermsConditions = () => {
   return (
     <>
         <PageTitle title="Terms & Conditions" />
-        <Breadcrumb breadcrumb={["Home","Terms & Conditions"]}/>
+             <Breadcrumb breadcrumb={[
+      {breadtitle:"Home", link:"/"},
+      {breadtitle:"Terms & Conditions", link:"/" },
+      // {breadtitle:"Soupherb", link:"" },
+      ]}/>
         <div className="privacycontainer">
            
             <h2>Introduction</h2>

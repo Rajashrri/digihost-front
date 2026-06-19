@@ -33,7 +33,7 @@ const BlogDetailsPage = () => {
   return (
     <>
     {/* <PageTitle title={blogTitle}/> */}
-      <Breadcrumb
+      {/* <Breadcrumb
         breadcrumb={[
           "Home",
           "Blog",
@@ -41,7 +41,14 @@ const BlogDetailsPage = () => {
             ? blogTitle.substring(0, 40) + "..."
             : blogTitle,
         ]}
-      />
+      /> */}
+          <Breadcrumb breadcrumb={[
+      {breadtitle:"Home", link:"/"},
+      {breadtitle:"Blog", link:"/blog" },
+      {breadtitle: blogTitle.length > 40
+            ? blogTitle.substring(0, 40) + "..."
+            : blogTitle, link:"" },
+      ]}/>
 
       <BlogDetails />
     </>

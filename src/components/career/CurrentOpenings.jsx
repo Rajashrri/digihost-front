@@ -7,7 +7,7 @@ const CurrentOpenings = () => {
   <div className="container">
 
     <div className='opnings'>
-        <h2 className="heading">Current Openings</h2>
+        {/* <h2 className="heading">Current Openings</h2>
 
         <div className="current">
             <a href="#!" data-gsap onClick={() => setShowPopup(true)}>
@@ -50,9 +50,9 @@ const CurrentOpenings = () => {
                 </div>
             </a>
 
-        </div>
+        </div> */}
 
-        <h2 className="heading before" data-gsap>Before You Apply</h2>
+        <h2 className="heading before mt-0" data-gsap>Before You Apply</h2>
         <h3>Ask yourself:</h3>
         <h4>Do I want </h4>
 

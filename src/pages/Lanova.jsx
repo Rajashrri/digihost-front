@@ -7,7 +7,11 @@ const Lanova = () => {
   return (
     <div>
       <PageTitle title="La Nova" />
-        <Breadcrumb breadcrumb={["Home","Protfolio","La Nova"]}/>
+              <Breadcrumb breadcrumb={[
+      {breadtitle:"Home", link:"/"},
+      {breadtitle:"Protfolio", link:"/protfolio" },
+      {breadtitle:"La Nova", link:"" },
+      ]}/>
         <LanovaDetails/>
     </div>
   )

@@ -7,7 +7,12 @@ const Akirhs = () => {
   return (
     <div>
        <PageTitle title="Akirhs" />
-        <Breadcrumb breadcrumb={["Home","Protfolio","Akirhs"]}/>
+           <Breadcrumb breadcrumb={[
+      {breadtitle:"Home", link:"/"},
+      {breadtitle:"Protfolio", link:"/protfolio" },
+      {breadtitle:"Akirhs", link:"" },
+      ]}/>
+        {/* <Breadcrumb breadcrumb={["Home","Protfolio","Akirhs"]}/> */}
       <AkirhsDetails/>
     </div>
   )

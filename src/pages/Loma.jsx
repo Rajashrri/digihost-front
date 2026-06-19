@@ -7,7 +7,11 @@ const Loma = () => {
   return (
     <div>
       <PageTitle title="Loma Dental" />
-        <Breadcrumb breadcrumb={["Home","Protfolio","Loma Dental"]}/>
+                <Breadcrumb breadcrumb={[
+      {breadtitle:"Home", link:"/"},
+      {breadtitle:"Protfolio", link:"/protfolio" },
+      {breadtitle:"Loma Dental", link:"" },
+      ]}/>
         <LomaDetails/>
     </div>
   )

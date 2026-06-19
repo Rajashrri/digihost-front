@@ -7,7 +7,11 @@ const CaNair = () => {
   return (
     <div>
        <PageTitle title="Ca Nair" />
-         <Breadcrumb breadcrumb={["Home","Protfolio","Ca Nair"]}/>
+             <Breadcrumb breadcrumb={[
+      {breadtitle:"Home", link:"/"},
+      {breadtitle:"Protfolio", link:"/protfolio" },
+      {breadtitle:"Ca Nair", link:"" },
+      ]}/>
         <CaNairDetails/>
     </div>
   )

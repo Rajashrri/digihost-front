@@ -7,7 +7,11 @@ const Wefanss = () => {
   return (
     <>
     <PageTitle title="Wefanss" />
-        <Breadcrumb breadcrumb={["Home","Protfolio","Wefanss"]}/>
+         <Breadcrumb breadcrumb={[
+      {breadtitle:"Home", link:"/"},
+      {breadtitle:"Protfolio", link:"/protfolio" },
+      {breadtitle:"Wefanss", link:"" },
+      ]}/>
         <WefanssDetails/>
     </>
   )

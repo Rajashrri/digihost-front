@@ -27,7 +27,11 @@ const PortfolioPage = () => {
             <h3 data-gsap>Showcase of Your Best Work</h3>
 
         </div> */}
-                <Breadcrumb breadcrumb={["Home","Portfolios"]}/>
+                        <Breadcrumb breadcrumb={[
+      {breadtitle:"Home", link:"/"},
+      {breadtitle:"Protfolio", link:"/protfolio" },
+      // {breadtitle:"Loma Dental", link:"" },
+      ]}/>
         <Portfolio/>
         
     {/* </div> */}

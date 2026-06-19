@@ -7,7 +7,11 @@ const SoupHerb = () => {
   return (
     <>
     <PageTitle title="Soupherb" />
-        <Breadcrumb breadcrumb={["Home","Protfolio","Soupherb"]}/>
+          <Breadcrumb breadcrumb={[
+      {breadtitle:"Home", link:"/"},
+      {breadtitle:"Protfolio", link:"/protfolio" },
+      {breadtitle:"Soupherb", link:"" },
+      ]}/>
         <Details/>
     </>
   )

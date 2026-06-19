@@ -12,7 +12,7 @@ const Footer = () => {
                 <li data-gsap><Link to="/">HOME</Link></li>
                 <li data-gsap><Link to="/about">About</Link></li>
                 <li data-gsap><Link to="/portfolio">Portfolio</Link></li>
-                <li data-gsap><Link to="/blog">Blogs</Link></li>
+                <li data-gsap><Link to="/blog">Blog</Link></li>
                 <li data-gsap><Link to="/career">Career</Link></li>
                 <li data-gsap><Link to="/contact">Contact</Link></li>
             </ul>

@@ -7,7 +7,11 @@ const ContactPage = () => {
   return (
     <div>
       <PageTitle title="Contact" />
-         <Breadcrumb breadcrumb={["Home","Contact"]}/>
+             <Breadcrumb breadcrumb={[
+      {breadtitle:"Home", link:"/"},
+      // {breadtitle:"Protfolio", link:"/protfolio" },
+      {breadtitle:"Contact", link:"" },
+      ]}/>
          <Contact/>
 
     </div>

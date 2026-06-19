@@ -11,11 +11,11 @@ const Error = () => {
                       
                           <React.Fragment >
                             <li>
-                              <a href="">Home</a>
+                              <a href="/">Home</a>
                             </li>
                             <li>||</li>
                             <li>
-                              <a href="">404</a>
+                              <a href="#!">404</a>
                             </li>
                           </React.Fragment>
                   

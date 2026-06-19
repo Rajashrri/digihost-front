@@ -1155,7 +1155,7 @@ align-self: stretch;
   text-transform: capitalize;
 }
 
-.breadcrumb ul li:last-child a {
+.breadcrumb ul li:last-child {
   color: var(--Mint-Breeze, #B1EBE0);
 }
 
@@ -3004,7 +3004,7 @@ text-transform: uppercase;
 }
 
 .opnings .heading.before {
-  margin-top: 110px;
+  margin-top: 90px;
   margin-bottom: 25px;
 }
 

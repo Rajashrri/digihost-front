@@ -11,7 +11,11 @@ const Career = () => {
   return (
     <>
     <PageTitle title="Career" />
-     <Breadcrumb breadcrumb={["Home","Career"]}/>
+        <Breadcrumb breadcrumb={[
+      {breadtitle:"Home", link:"/"},
+      // {breadtitle:"Protfolio", link:"/protfolio" },
+      {breadtitle:"Career", link:"" },
+      ]}/>
      <CultureSection/>
      <YouWillBe/>
      <HiringProcess/>

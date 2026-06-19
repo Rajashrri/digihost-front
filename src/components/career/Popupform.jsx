@@ -9,6 +9,7 @@ const Popupform = ({ showPopup, setShowPopup }) => {
     mobile: "",
     experience: "",
     location: "",
+    position : "",
     coverLetter: "",
   });
 
@@ -31,6 +32,7 @@ const Popupform = ({ showPopup, setShowPopup }) => {
     if (!formData.experience.trim()) err.experience = "Experience is required";
 
     if (!formData.location.trim()) err.location = "Location is required";
+    if (!formData.position.trim()) err.position = "Position is required";
 
     if (!resume) err.resume = "Resume is required";
 
@@ -219,8 +221,26 @@ const Popupform = ({ showPopup, setShowPopup }) => {
                       <small className="text-danger">{errors.location}</small>
                     )}
                   </div>
+                    <div className="form-group">
+                    <label>Apply For The Position * </label>
+                    <input
+                      type="text"
+                      name="postion"
+                      placeholder="Front end Developer"
+                      value={formData.position}
+                      onChange={handleChange}
+                    />
 
-                  <div className="form-group fileup">
+                    {errors.position  && (
+                      <small className="text-danger">{errors.position}</small>
+                    )}
+                  </div>
+
+                 
+                </div>
+              </div>
+              <div className="col-lg-12">
+                 <div className="form-group fileup">
                     <label>Upload Resume *</label>
                     <input
                       type="file"
@@ -248,7 +268,6 @@ const Popupform = ({ showPopup, setShowPopup }) => {
                       <span>Choose A File</span>
                     </div>
                   </div>
-                </div>
               </div>
               <div className="col-lg-12">
                 <div className="form-group">

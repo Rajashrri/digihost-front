@@ -7,7 +7,11 @@ const WorldFlair = () => {
   return (
     <>
     <PageTitle title="WorldFlair" />
-      <Breadcrumb breadcrumb={["Home","Protfolio","WorldFlair"]}/>
+         <Breadcrumb breadcrumb={[
+      {breadtitle:"Home", link:"/"},
+      {breadtitle:"Protfolio", link:"/protfolio" },
+      {breadtitle:"WorldFlair", link:"" },
+      ]}/>
       <WorldFlairDetails/>
     </>
   )

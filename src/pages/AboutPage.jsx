@@ -16,9 +16,11 @@ const AboutPage = () => {
   return (
     <>
       <PageTitle title="About" />
-    <Breadcrumb breadcrumb={["Home","About"]}/>
+    <Breadcrumb breadcrumb={[
+      {breadtitle:"Home", link:"/"},
+      {breadtitle:"About", link:"/about" }]}/>
     <AboutText/>
-    <Timeline/>
+    {/* <Timeline/> */}
     <AboutCta/>
     <AboutAg/>
     <AboutCard/>
