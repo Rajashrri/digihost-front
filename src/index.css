@@ -4300,7 +4300,7 @@ margin-bottom: 0;
         max-width: 173px;
     }
     .bigtextcontainer{
-      height: 100%;
+      height: 200px;
       margin-bottom: 16px;
     }
 }
@@ -4438,6 +4438,9 @@ margin-bottom: 0;
 .timelinewrappewr{
   flex-direction: column;
   gap: 10px 0;
+}
+.culture-card.light .culture-grid{
+  gap: 30px;
 }
 .heading1 {
     margin-bottom: 32px;
@@ -4681,7 +4684,7 @@ bottom: 20%;
       padding: 40PX;
     }
     .culture-card.light .culture-grid{
-      gap: 30px;
+      gap: 30px !important;
     }
     .homebanner figure::after{
         position: absolute;
