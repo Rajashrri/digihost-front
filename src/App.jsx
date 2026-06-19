@@ -45,7 +45,7 @@ function App() {
     }, 2000)
   }, [])
 
-  // if (loading) {
+  if (loading) {
     return (
       <div className="loader-wrapper">
         <div className="loader">
@@ -53,7 +53,7 @@ function App() {
         </div>
       </div>
     )
-  // }
+  }
 
   return (
     <>
