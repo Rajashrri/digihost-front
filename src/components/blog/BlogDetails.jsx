@@ -20,11 +20,7 @@ useEffect(() => {
   if (!blog) return;
 
   // Title
-document.title = blog?.metaTitle?.trim()
-  ? blog.metaTitle
-  : blog?.title?.trim()
-  ? blog.title
-  : "DIIGIIHOST";
+document.title = `${blog.metaTitle || blog.title} | Blog | DIIGIIHOST`;
   // Description
   let descriptionTag = document.querySelector(
     'meta[name="description"]'
