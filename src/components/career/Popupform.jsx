@@ -225,7 +225,7 @@ const Popupform = ({ showPopup, setShowPopup }) => {
                     <label>Apply For The Position * </label>
                     <input
                       type="text"
-                      name="postion"
+                      name="position"
                       placeholder="Front end Developer"
                       value={formData.position}
                       onChange={handleChange}
