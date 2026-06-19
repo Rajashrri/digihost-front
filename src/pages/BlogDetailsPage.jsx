@@ -23,7 +23,6 @@ const BlogDetailsPage = () => {
       if (response.data.success) {
         setBlogTitle(response.data.data.title);
 
-        document.title = `${response.data.data.title} | Blog Details | DIIGIIHOST`;
       }
     } catch (error) {
       console.log(error);
