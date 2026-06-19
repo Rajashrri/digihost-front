@@ -1843,6 +1843,9 @@ a:hover {
   /* 28.8px */
   margin-top: 20px;
 }
+.detaicontent img{
+  border-radius: 8px;
+}
 .detaicontent ul li,
 .detaicontent ol li{
     color: var(--background, #FEFEFE);
