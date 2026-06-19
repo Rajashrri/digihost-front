@@ -112,7 +112,9 @@ const CaNairDetails = () => {
         </figure>
 
         <h3 data-gsap className="dettext">
-         A technology identity designed to feel <br /> globally capable, structured, and future-facing.
+         A financial identity shaped around <br />
+clarity, trust, and professional confidence.
+
         </h3>
 
         <div className="bigtextcontainer" ref={sectionRef}>

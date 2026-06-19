@@ -115,7 +115,7 @@ const VerteacalBlendzDetails = () => {
        A legacy tea business reimagined for <br /> a more contemporary and global future.
         </h3>
 
-        <div className="bigtextcontainer" ref={sectionRef}>
+        <div className="bigtextcontainer rbh" ref={sectionRef}>
           <h2 ref={textRef}>Verteacal Blendz</h2>
         </div>
 

@@ -19,8 +19,8 @@ const Footer = () => {
 
             <div className="policy">
                 <ul>
-                    <li data-gsap><Link>Privacy Policy</Link></li>
-                    <li data-gsap><Link>Terms & Conditions</Link></li>
+                    <li data-gsap><Link to="/privacy-policy">Privacy Policy</Link></li>
+                    <li data-gsap><Link to="/terms-conditions">Terms & Conditions</Link></li>
                 </ul>
                 <ul>
                     <li data-gsap><a target='_blank' href='https://www.instagram.com/diigiihost_in/'>Instagram</a></li>

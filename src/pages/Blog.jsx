@@ -6,7 +6,7 @@ import PageTitle from '../components/PageTitle'
 const Blog = () => {
   return (
     <div>
-      <PageTitle title="Blog" />
+        <PageTitle title="Blog" />
         <Breadcrumb breadcrumb={["Home","blog"]}/>
         <BlogList/>
         

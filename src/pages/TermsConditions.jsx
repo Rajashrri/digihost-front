@@ -1,0 +1,107 @@
+import React from 'react'
+import PageTitle from '../components/PageTitle'
+import Breadcrumb from '../components/common/Breadcrumb'
+
+const TermsConditions = () => {
+  return (
+    <>
+        <PageTitle title="Terms & Conditions" />
+        <Breadcrumb breadcrumb={["Home","Terms & Conditions"]}/>
+        <div className="privacycontainer">
+           
+            <h2>Introduction</h2>
+  <p>
+    These Website Standard Terms and Conditions written on this webpage shall manage your use of our website, DigiHost Tech Solutions Pvt. Ltd. accessible at www.digihost.in.
+  </p>
+  <p>
+    These Terms will be applied fully and affect to your use of this Website. By using this Website, you agreed to accept all terms and conditions written in here. You must not use this Website if you disagree with any of these Website Standard Terms and Conditions.
+  </p>
+
+  <h2>Intellectual Property Rights</h2>
+  <p>
+    Other than the content you own, under these Terms, DigiHost Tech Solutions Pvt. Ltd. and/or its licensors own all the intellectual property rights and materials contained in this Website.
+  </p>
+  <p>
+    You are granted limited license only for purposes of viewing the material contained on this Website.
+  </p>
+
+  <h2>Restrictions</h2>
+  <p>You are specifically restricted from all of the following:</p>
+  <p>1. Publishing any Website material in any other media.</p>
+  <p>2. Selling, sublicensing and/or otherwise commercializing any Website material.</p>
+  <p>3. Publicly performing and/or showing any Website material.</p>
+  <p>4. Using this Website in any way that is or may be damaging to this Website.</p>
+  <p>5. Using this Website in any way that impacts user access to this Website.</p>
+  <p>6. Using this Website contrary to applicable laws and regulations, or in any way may cause harm to the Website, or to any person or business entity.</p>
+  <p>7. Engaging in any data mining, data harvesting, data extracting or any other similar activity in relation to this Website.</p>
+  <p>8. Using this Website to engage in any advertising or marketing.</p>
+  <p>
+    Certain areas of this Website are restricted from being accessed by you and DigiHost Tech Solutions Pvt. Ltd. may further restrict access by you to any areas of this Website, at any time, in absolute discretion. Any user ID and password you may have for this Website are confidential and you must maintain confidentiality as well.
+  </p>
+
+  <h2>Your Content</h2>
+  <p>
+    In these Website Standard Terms and Conditions, "Your Content" shall mean any audio, video, text, images or other material you choose to display on this Website.
+  </p>
+  <p>
+    By displaying Your Content, you grant DigiHost Tech Solutions Pvt. Ltd. a non-exclusive, worldwide irrevocable, sub-licensable license to use, reproduce, adapt, publish, translate and distribute it in any and all media.
+  </p>
+  <p>
+    Your Content must be your own and must not be invading any third-party’s rights. DigiHost Tech Solutions Pvt. Ltd. reserves the right to remove any of Your Content from this Website at any time without notice.
+  </p>
+
+  <h2>No Warranties</h2>
+  <p>
+    This Website is provided "as is," with all faults, and DigiHost Tech Solutions Pvt. Ltd. express no representations or warranties, of any kind related to this Website or the materials contained on this Website.
+  </p>
+  <p>
+    Also, nothing contained on this Website shall be interpreted as advising you.
+  </p>
+
+  <h2>Limitation Of Liability</h2>
+  <p>
+    In no event shall DigiHost Tech Solutions Pvt. Ltd., nor any of its officers, directors and employees, be held liable for anything arising out of or in any way connected with your use of this Website whether such liability is under contract.
+  </p>
+  <p>
+    DigiHost Tech Solutions Pvt. Ltd., including its officers, directors and employees shall not be held liable for any indirect, consequential or special liability arising out of or in any way related to your use of this Website.
+  </p>
+
+  <h2>Indemnification</h2>
+  <p>
+    You hereby indemnify to the fullest extent DigiHost Tech Solutions Pvt. Ltd. from and against any and/or all liabilities, costs, demands, causes of action, damages and expenses arising in any way related to your breach of any of the provisions of these Terms.
+  </p>
+
+  <h2>Severability</h2>
+  <p>
+    If any provision of these Terms is found to be invalid under any applicable law, such provisions shall be deleted without affecting the remaining provisions herein.
+  </p>
+
+  <h2>Variation Of Terms</h2>
+  <p>
+    DigiHost Tech Solutions Pvt. Ltd. is permitted to revise these Terms at any time as it sees fit, and by using this Website you are expected to review these Terms on a regular basis.
+  </p>
+
+  <h2>Assignment</h2>
+  <p>
+    DigiHost Tech Solutions Pvt. Ltd. is allowed to assign, transfer, and subcontract its rights and/or obligations under these Terms without any notification.
+  </p>
+  <p>
+    However, you are not allowed to assign, transfer, or subcontract any of your rights and/or obligations under these Terms.
+  </p>
+
+  <h2>Entire Agreement</h2>
+  <p>
+    These Terms constitute the entire agreement between DigiHost Tech Solutions Pvt. Ltd. and you in relation to your use of this Website, and supersede all prior agreements and understandings.
+  </p>
+
+  <h2>Governing Law & Jurisdiction</h2>
+  <p>
+    These Terms will be governed by and interpreted in accordance with the laws of the State of Maharashtra, and you submit to the non-exclusive jurisdiction of the state and federal courts located in Maharashtra for the resolution of any disputes.
+  </p>
+
+        </div>
+    </>
+  )
+}
+
+export default TermsConditions
