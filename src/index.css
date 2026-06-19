@@ -4097,10 +4097,10 @@ margin-bottom: 0;
 }
 
 .loader {
-  width: 350px; /* adjust */
+  max-width: 350px; /* adjust */
 }
 .loader img {
-  width: 300px; /* adjust */
+  width: 100%; /* adjust */
   height: auto;
   display: block;
 }
