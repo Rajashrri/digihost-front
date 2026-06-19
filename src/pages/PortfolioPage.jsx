@@ -29,7 +29,7 @@ const PortfolioPage = () => {
         </div> */}
                         <Breadcrumb breadcrumb={[
       {breadtitle:"Home", link:"/"},
-      {breadtitle:"Protfolio", link:"/protfolio" },
+      {breadtitle:"portfolio", link:"/portfolio" },
       // {breadtitle:"Loma Dental", link:"" },
       ]}/>
         <Portfolio/>

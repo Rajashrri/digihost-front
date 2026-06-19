@@ -9,7 +9,7 @@ const Rbs = () => {
     <PageTitle title="Rekha Bright Steel" />
         <Breadcrumb breadcrumb={[
       {breadtitle:"Home", link:"/"},
-      {breadtitle:"Protfolio", link:"/protfolio" },
+      {breadtitle:"portfolio", link:"/portfolio" },
       {breadtitle:"Rekha Bright Steel", link:"" },
       ]}/>
      <RBSdetails/>

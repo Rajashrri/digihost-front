@@ -9,7 +9,7 @@ const CaNair = () => {
        <PageTitle title="Ca Nair" />
              <Breadcrumb breadcrumb={[
       {breadtitle:"Home", link:"/"},
-      {breadtitle:"Protfolio", link:"/protfolio" },
+      {breadtitle:"portfolio", link:"/portfolio" },
       {breadtitle:"Ca Nair", link:"" },
       ]}/>
         <CaNairDetails/>

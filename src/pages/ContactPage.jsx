@@ -9,7 +9,7 @@ const ContactPage = () => {
       <PageTitle title="Contact" />
              <Breadcrumb breadcrumb={[
       {breadtitle:"Home", link:"/"},
-      // {breadtitle:"Protfolio", link:"/protfolio" },
+      // {breadtitle:"portfolio", link:"/portfolio" },
       {breadtitle:"Contact", link:"" },
       ]}/>
          <Contact/>

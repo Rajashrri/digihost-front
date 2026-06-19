@@ -9,10 +9,10 @@ const Akirhs = () => {
        <PageTitle title="Akirhs" />
            <Breadcrumb breadcrumb={[
       {breadtitle:"Home", link:"/"},
-      {breadtitle:"Protfolio", link:"/protfolio" },
+      {breadtitle:"portfolio", link:"/portfolio" },
       {breadtitle:"Akirhs", link:"" },
       ]}/>
-        {/* <Breadcrumb breadcrumb={["Home","Protfolio","Akirhs"]}/> */}
+        {/* <Breadcrumb breadcrumb={["Home","portfolio","Akirhs"]}/> */}
       <AkirhsDetails/>
     </div>
   )

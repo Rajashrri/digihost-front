@@ -9,7 +9,7 @@ const DrGaikwad = () => {
     <PageTitle title="Dr Gaikwad" />
          <Breadcrumb breadcrumb={[
       {breadtitle:"Home", link:"/"},
-      {breadtitle:"Protfolio", link:"/protfolio" },
+      {breadtitle:"portfolio", link:"/portfolio" },
       {breadtitle:"Dr Gaikwad", link:"" },
       ]}/>
      <DrGaikwadDetails/>

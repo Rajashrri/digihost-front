@@ -9,7 +9,7 @@ const VerteacalBlendz = () => {
       <PageTitle title="Verteacal Blendz" />
            <Breadcrumb breadcrumb={[
       {breadtitle:"Home", link:"/"},
-      {breadtitle:"Protfolio", link:"/protfolio" },
+      {breadtitle:"portfolio", link:"/portfolio" },
       {breadtitle:"Verteacal Blendz", link:"" },
       ]}/>
         <VerteacalBlendzDetails/>

@@ -8,7 +8,7 @@ const PrivacyPolicy = () => {
         <PageTitle title="Privacy Policy" />
                  <Breadcrumb breadcrumb={[
       {breadtitle:"Home", link:"/"},
-      // {breadtitle:"Protfolio", link:"/protfolio" },
+      // {breadtitle:"portfolio", link:"/portfolio" },
       {breadtitle:"Privacy Policy", link:"" },
       ]}/>
         <div className="privacycontainer">
