@@ -1843,7 +1843,8 @@ a:hover {
   /* 28.8px */
   margin-top: 20px;
 }
-.detaicontent ul li{
+.detaicontent ul li,
+.detaicontent ol li{
     color: var(--background, #FEFEFE);
   font-family: var(--Altone);
   font-size: 1rem;
