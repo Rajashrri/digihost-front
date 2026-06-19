@@ -22,7 +22,7 @@ const BlogList = () => {
   useEffect(() => {
     fetchBlogs();
 
-      document.title = "Blogs | DiigiiHost";
+      document.title = "Blogs | DIIGIIHOST";
 
     fetchCategories();
   }, []);
