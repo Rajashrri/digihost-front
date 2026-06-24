@@ -374,7 +374,8 @@ const copyLink = async () => {
         </div>
         <figure data-gsap>
           <img
-            src={`${import.meta.env.VITE_API_BASE_URL}/blog/${blog.mainImage}`}
+
+            src={blog.mainImage}
            alt={blog.mainImageAlt || blog.title}
           />
         </figure>
@@ -407,8 +408,9 @@ const copyLink = async () => {
 
                 <div className="blog-img">
                   <img
-                    src={`${import.meta.env.VITE_API_BASE_URL}/blog/${item.featuredImage}`}
-                    alt={blog.featuredImageAlt || blog.title}
+                              src={item.featuredImage}
+
+                    alt={item.featuredImageAlt || item.title}
                   />
                 </div>
 
