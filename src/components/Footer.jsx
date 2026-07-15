@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <div className='footer'>
         <div className="footerconainer">
-            <h2 data-gsap>Craftiing viisual storiies that capture the essence of your brand.</h2>
+            <h2 data-gsap>Crafting visual stories that capture the essence of your brand.</h2>
 
             <ul className='footermenu'>
                 <li data-gsap><Link to="/">HOME</Link></li>

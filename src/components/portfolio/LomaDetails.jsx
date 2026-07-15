@@ -63,9 +63,10 @@ const LomaDetails = () => {
     y: "0%",
   },
   {
-    fontSize: window.innerWidth <= 1024 ? "64px" : "200px",
-    x: window.innerWidth <= 1024 ? "0%" : "0%",
-    y: window.innerWidth <= 1024 ? "80%" : "100%",
+    fontSize: window.innerWidth <= 1025
+     ? "58px" : "200px",
+    x: window.innerWidth <= 1025 ? "0%" : "0%",
+    y: window.innerWidth <= 1025 ? "80%" : "100%",
     ease: "none",
     scrollTrigger: {
       trigger: sectionRef.current,

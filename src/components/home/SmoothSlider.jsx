@@ -75,11 +75,145 @@ const SmoothSlider = () => {
 
     return () => clearInterval(auto)
   }, [])
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 767);
 
+useEffect(() => {
+  const handleResize = () => {
+    setIsMobile(window.innerWidth <= 767);
+  };
+
+  window.addEventListener("resize", handleResize);
+  return () => window.removeEventListener("resize", handleResize);
+}, []);
+
+  // return (
+  //   <div className="smooth-slider">
+
+    
+  //     <div className="left-thumbs">
+  //       {slides
+  //         .filter((_, index) => index === active)
+  //         .map((item, i) => {
+  //           const realIndex = (active + i + 1) % slides.length
+
+  //           return (
+  //             <div
+  //               key={realIndex}
+  //               className="left-thumb"
+  //               onClick={() => setActive(realIndex)}
+  //             >
+  //               <img src={slides[realIndex].thumb} alt="" />
+  //             </div>
+  //           )
+  //         })}
+  //     </div>
+
+
+  //     <div className="slider-left">
+  //       <img src={slides[active].image} alt="" />
+  //     </div>
+
+    
+  //     <div className="slider-right">
+  //       <div className="contentwrpa1">
+
+      
+
+  //       <div className="nav-btns">
+  //         <button onClick={prevSlide}>
+  //           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+  //           <path d="M6 8L2 12M2 12L6 16M2 12H22" stroke="#1A766D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  //         </svg>
+  //         </button>
+  //         <button onClick={nextSlide}>
+  //           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+  //           <path d="M18 8L22 12M22 12L18 16M22 12H2" stroke="#1A766D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  //         </svg>
+  //         </button>
+  //       </div>
+
+  //       <div className="content-box">
+
+  //         <figure>
+  //            <img src={slides[active].image} alt="" />
+  //         </figure>
+
+  //         <h2>{slides[active].title}</h2>
+  //         <p>{slides[active].desc}</p>
+
+  //         <div className="tags">
+  //           {slides[active].tags.map((tag, i) => (
+  //             <span key={i}>{tag}</span>
+  //           ))}
+  //         </div>
+  //         <div>
+  //           <a href={slides[active].link}><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
+  //         <path d="M42 26V38C42 39.0609 41.5786 40.0783 40.8284 40.8284C40.0783 41.5786 39.0609 42 38 42H10C8.93913 42 7.92172 41.5786 7.17157 40.8284C6.42143 40.0783 6 39.0609 6 38V10C6 8.93913 6.42143 7.92172 7.17157 7.17157C7.92172 6.42143 8.93913 6 10 6H22M42 6L24 24M42 6H30M42 6V18" stroke="#B1EBE0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  //       </svg></a>
+  //         </div>
+  //       </div>
+  //         </div>
+
+    
+  //       <div className="thumb-row">
+  //         {slides.map((item, index) => (
+  //           <div
+  //             key={index}
+  //             className={`thumb ${active === index ? "active" : ""}`}
+  //             onClick={() => setActive(index)}
+  //           >
+  //             <img src={item.thumb} alt="" />
+  //           </div>
+  //         ))}
+  //       </div>
+
+  //     </div>
+  //   </div>
+  // )
   return (
-    <div className="smooth-slider">
+  <>
+    {isMobile ? (
+      <div className="mobile-slider">
+        {slides.map((item, index) => (
+          <div
+            key={index}
+            className={`mobile-card ${
+              active === index ? "active" : ""
+            }`}
+          >
+            <img src={item.image} alt={item.title} />
 
-      {/* LEFT SIDE UPCOMING CARDS */}
+            <div className="mobile-content">
+              <h2>{item.title}</h2>
+
+              {item.desc && <p>{item.desc}</p>}
+
+              {item.tags.length > 0 && (
+                <div className="tags">
+                  {item.tags.map((tag, i) => (
+                    <span key={i}>{tag}</span>
+                  ))}
+                </div>
+              )}
+
+              <a href={item.link} className="mobile-btn">
+               <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
+                <path d="M42 26V38C42 39.0609 41.5786 40.0783 40.8284 40.8284C40.0783 41.5786 39.0609 42 38 42H10C8.93913 42 7.92172 41.5786 7.17157 40.8284C6.42143 40.0783 6 39.0609 6 38V10C6 8.93913 6.42143 7.92172 7.17157 7.17157C7.92172 6.42143 8.93913 6 10 6H22M42 6L24 24M42 18V6H30" stroke="#B1EBE0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              </a>
+            </div>
+          </div>
+        ))}
+
+        {/* <div className="mobile-nav">
+          <button onClick={prevSlide}>Prev</button>
+          <button onClick={nextSlide}>Next</button>
+        </div> */}
+      </div>
+    ) : (
+       <div className="smooth-slider">
+
+    
       <div className="left-thumbs">
         {slides
           .filter((_, index) => index === active)
@@ -98,12 +232,12 @@ const SmoothSlider = () => {
           })}
       </div>
 
-      {/* CENTER IMAGE */}
+
       <div className="slider-left">
         <img src={slides[active].image} alt="" />
       </div>
 
-      {/* RIGHT CONTENT */}
+    
       <div className="slider-right">
         <div className="contentwrpa1">
 
@@ -144,7 +278,7 @@ const SmoothSlider = () => {
         </div>
           </div>
 
-        {/* RIGHT THUMBS */}
+    
         <div className="thumb-row">
           {slides.map((item, index) => (
             <div
@@ -159,7 +293,9 @@ const SmoothSlider = () => {
 
       </div>
     </div>
-  )
+    )}
+  </>
+);
 }
 
 export default SmoothSlider

@@ -26,14 +26,14 @@ const LogoReveal = () => {
     const ctx = gsap.context(() => {
 
       // STOP ON MOBILE
-      if (window.innerWidth <= 991) {
+      // if (window.innerWidth <= 991) {
         gsap.set(".centertext, .brandlogo", {
           clearProps: "all",
           opacity: 1,
           scale: 1
         })
-        return
-      }
+      //   return
+      // }
 
       const centerText = sectionRef.current.querySelector(".centertext")
       const logos = gsap.utils.toArray(".brandlogo")
