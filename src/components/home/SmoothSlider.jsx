@@ -182,6 +182,18 @@ useEffect(() => {
             }`}
           >
             <img src={item.image} alt={item.title} />
+               <div className="mobile-nav">
+           <button onClick={prevSlide}>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M6 8L2 12M2 12L6 16M2 12H22" stroke="#1A766D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          </button>
+          <button onClick={nextSlide}>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M18 8L22 12M22 12L18 16M22 12H2" stroke="#1A766D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          </button>
+        </div> 
 
             <div className="mobile-content">
               <h2>{item.title}</h2>
@@ -205,10 +217,7 @@ useEffect(() => {
           </div>
         ))}
 
-        {/* <div className="mobile-nav">
-          <button onClick={prevSlide}>Prev</button>
-          <button onClick={nextSlide}>Next</button>
-        </div> */}
+      
       </div>
     ) : (
        <div className="smooth-slider">

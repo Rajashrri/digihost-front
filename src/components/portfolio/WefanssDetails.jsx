@@ -117,7 +117,7 @@ const WefanssDetails = () => {
           A youth-driven identity designed around <br /> energy, culture, and digital engagement.
         </h3>
 
-        <div className="bigtextcontainer" ref={sectionRef}>
+        <div className="bigtextcontainer wefanssbittext" ref={sectionRef}>
           <h2 ref={textRef}>Wefanss</h2>
         </div>
 

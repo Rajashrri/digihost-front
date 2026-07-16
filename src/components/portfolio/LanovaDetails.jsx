@@ -117,7 +117,7 @@ const LanovaDetails = () => {
          A modern identity for a brand built around refinement, restraint, and quiet confidence.
         </h3>
 
-        <div className="bigtextcontainer" ref={sectionRef}>
+        <div className="bigtextcontainer lanovabigtext" ref={sectionRef}>
           <h2 ref={textRef}>La Nova</h2>
         </div>
 

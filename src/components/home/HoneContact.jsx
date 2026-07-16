@@ -6,7 +6,7 @@ const HoneContact = () => {
   return (
     <div className='homecontact'>
         <div className="container">
-            <h2 data-gsap>Partneriing with cliients iIs <br /> cruciial for success.</h2>
+            <h2 data-gsap>Partnering with clients iIs <br /> crucial for success.</h2>
 
             <div className="mail">
                 <a href="mainto:sales@digihost.in" data-gsap>sales@digihost.in</a>

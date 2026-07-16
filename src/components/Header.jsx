@@ -1,14 +1,41 @@
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react";
 import { Link, NavLink } from "react-router-dom"
 import logo from "./../assets/logo.svg"
 import menu from "./../assets/svg/menu.svg"
 
 const Header = () => {
   const [openMenu, setOpenMenu] = useState(false)
+  const [showHeader, setShowHeader] = useState(true);
+
+  useEffect(() => {
+  let lastScrollY = window.scrollY;
+
+  const handleScroll = () => {
+    const currentScrollY = window.scrollY;
+
+    if (currentScrollY <= 20) {
+      setShowHeader(true);
+    } else if (currentScrollY < lastScrollY) {
+      // Scrolling up
+      setShowHeader(true);
+    } else {
+      // Scrolling down
+      setShowHeader(false);
+    }
+
+    lastScrollY = currentScrollY;
+  };
+
+  window.addEventListener("scroll", handleScroll);
+
+  return () => {
+    window.removeEventListener("scroll", handleScroll);
+  };
+}, []);
 
   return (
     <>
-      <div className="header">
+      <div className={`header ${showHeader ? "show" : "hide"}`}>
         <div className="container">
           <div className="menuwrap">
             <Link to="/" className="logo">

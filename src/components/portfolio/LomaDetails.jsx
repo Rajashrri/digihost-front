@@ -66,7 +66,7 @@ const LomaDetails = () => {
     fontSize: window.innerWidth <= 1025
      ? "58px" : "200px",
     x: window.innerWidth <= 1025 ? "0%" : "0%",
-    y: window.innerWidth <= 1025 ? "80%" : "100%",
+    y: window.innerWidth <= 1025 ? "0%" : "100%",
     ease: "none",
     scrollTrigger: {
       trigger: sectionRef.current,
@@ -116,7 +116,7 @@ const LomaDetails = () => {
           A premium dental identity designed around modern care, emotional comfort, and transformation.
         </h3>
 
-        <div className="bigtextcontainer" ref={sectionRef}>
+        <div className="bigtextcontainer lomadentalbigtext" ref={sectionRef}>
           <h2 ref={textRef}>Loma Dental</h2>
         </div>
 

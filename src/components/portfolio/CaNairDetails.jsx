@@ -65,7 +65,7 @@ const CaNairDetails = () => {
         {
           fontSize: window.innerWidth <= 1024 ? "64px" : "200px",
           x: window.innerWidth <= 1024 ? "0%" : "0%",
-          y: window.innerWidth <= 1024 ? "80%" : "100%",
+          y: window.innerWidth <= 1024 ? "10  0%" : "100%",
           ease: "none",
           scrollTrigger: {
             trigger: sectionRef.current,
