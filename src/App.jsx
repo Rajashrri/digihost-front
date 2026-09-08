@@ -29,6 +29,7 @@ import Thankyou from './pages/Thankyou'
 import PrivacyPolicy from './pages/PrivacyPolicy'
 import TermsConditions from './pages/TermsConditions'
 import loader from "./assets/loader.gif"
+import LogoPage from './pages/LogoPage'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -90,6 +91,7 @@ function App() {
             <Route path='/thank-you' element={<Thankyou />} />
             <Route path='/privacy-policy' element={<PrivacyPolicy />} />
             <Route path='/terms-conditions' element={<TermsConditions />} />
+            <Route path='/logo' element={<LogoPage />} />
 
           </Route>
         </Routes>

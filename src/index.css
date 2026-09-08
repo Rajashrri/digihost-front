@@ -5343,4 +5343,532 @@ background-size: 100%;
 }
 
 
-/* ****************************************** */
+/* ******************************************############################################ */
+
+/* =====================================================
+   MAIN
+===================================================== */
+/* =====================================================
+   MAIN PAGE
+===================================================== */
+/* =====================================================
+   MAIN PAGE
+===================================================== */
+
+.mainlogopage {
+  width: 100%;
+  height: 100vh;
+
+  padding: 15px;
+
+  box-sizing: border-box;
+}
+
+
+/* =====================================================
+   LOGO CONTAINER
+===================================================== */
+
+.logocontainer {
+  position: relative;
+
+  width: 100%;
+  height: 100%;
+
+  overflow: hidden;
+
+  /* background: #292929; */
+
+  /* border: 1px solid #00aaff; */
+
+  cursor: grab;
+
+  user-select: none;
+  -webkit-user-select: none;
+
+  touch-action: none;
+}
+
+
+.logocontainer.is-dragging {
+  cursor: grabbing;
+}
+
+
+/* =====================================================
+   INFINITE WORLD
+===================================================== */
+
+.infinite-world {
+  position: absolute;
+
+  top: 0;
+  left: 0;
+
+  width: 0;
+  height: 0;
+
+  overflow: visible;
+
+  pointer-events: none;
+}
+
+
+/* =====================================================
+   LOGO TILE
+===================================================== */
+
+.logo-tile {
+  position: absolute;
+
+  top: 0;
+  left: 0;
+
+  width: 1400px;
+  height: 1000px;
+
+  pointer-events: none;
+
+  will-change: transform;
+}
+
+
+/* =====================================================
+   LOGO CLICK AREA
+===================================================== */
+
+.logo-click-area {
+  position: absolute;
+
+  width: 90px;
+  height: 90px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  pointer-events: auto;
+
+  cursor: pointer;
+
+  z-index: 10;
+
+  user-select: none;
+  -webkit-user-select: none;
+
+  touch-action: manipulation;
+}
+
+
+/* =====================================================
+   LOGO IMAGE
+===================================================== */
+
+.brandlogo1 {
+  width: 90px;
+  height: auto;
+
+  max-width: 100%;
+  max-height: 100%;
+
+  display: block;
+
+  object-fit: contain;
+
+  pointer-events: none;
+
+  user-select: none;
+
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+
+  transition:
+    transform 0.2s ease,
+    opacity 0.2s ease;
+}
+
+
+/* =====================================================
+   LOGO HOVER
+===================================================== */
+
+.logo-click-area:hover .brandlogo1 {
+  transform: scale(1.08);
+
+  opacity: 0.85;
+}
+
+
+/* =====================================================
+   CENTER TEXT
+===================================================== */
+
+.centertext {
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+
+  transform:
+    translate(-50%, -50%);
+
+  z-index: 100;
+
+  pointer-events: none;
+
+  white-space: nowrap;
+}
+
+
+.centertext h2 {
+  margin: 0;
+
+color: var(--accent2, #B1EBE0);
+text-align: center;
+font-family: var(--AristaPro);
+font-size: 20px;
+font-style: normal;
+font-weight: 300;
+line-height: 100%; /* 20px */
+letter-spacing: -0.4px;
+
+  letter-spacing: 0.5px;
+}
+
+
+/* =====================================================
+   POPUP OVERLAY
+===================================================== */
+
+.website-popup-overlay {
+  position: fixed;
+
+  inset: 0;
+
+  z-index: 99999;
+
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  padding: 30px;
+
+  box-sizing: border-box;
+
+  background:
+    rgba(0, 0, 0, 0.72);
+
+  backdrop-filter: blur(5px);
+
+  -webkit-backdrop-filter: blur(5px);
+}
+
+
+/* =====================================================
+   POPUP
+===================================================== */
+
+.website-popup {
+  position: relative;
+
+  width: 70vw;
+  height: 100vh;
+
+  max-width: 1600px;
+
+  background: #ffffff;
+
+  border-radius: 14px;
+
+  overflow: hidden;
+
+  box-shadow:
+    0 25px 80px
+    rgba(0, 0, 0, 0.45);
+}
+
+
+/* =====================================================
+   POPUP HEADER
+===================================================== */
+
+.website-popup-header {
+  position: absolute;
+
+  top: 0;
+  left: 0;
+
+  width: 100%;
+
+  min-height: 58px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  padding:
+    0 14px 0 20px;
+
+  box-sizing: border-box;
+
+  /* background: #ffffff; */
+
+  /* border-bottom: */
+    /* 1px solid #e5e5e5; */
+
+  z-index: 100;
+
+
+  transition:
+    transform 0.3s ease,
+    opacity 0.3s ease;
+}
+
+
+/* =====================================================
+   HEADER SHOW
+===================================================== */
+
+.popup-header-show {
+  transform:
+    translateY(0);
+
+  opacity: 1;
+
+  pointer-events: auto;
+}
+
+
+/* =====================================================
+   HEADER HIDE
+===================================================== */
+
+.popup-header-hide {
+  transform:
+    translateY(-100%);
+
+  opacity: 0;
+
+  pointer-events: none;
+}
+
+
+/* =====================================================
+   POPUP TITLE
+===================================================== */
+
+.website-popup-title {
+  font-size: 16px;
+
+  font-weight: 600;
+
+  color: #222222;
+
+  overflow: hidden;
+
+  text-overflow: ellipsis;
+
+  white-space: nowrap;
+
+  padding-right: 20px;
+}
+
+
+/* =====================================================
+   ACTIONS
+===================================================== */
+
+.website-popup-actions {
+  display: flex;
+
+  align-items: center;
+
+  gap: 8px;
+}
+
+
+/* =====================================================
+   NEW TAB BUTTON
+===================================================== */
+
+.popup-new-tab {
+  width: 38px;
+  height: 38px;
+
+  border: 0;
+
+  border-radius: 8px;
+
+  background: #f1f1f1;
+
+  color: #222222;
+
+  font-size: 21px;
+
+  cursor: pointer;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease;
+}
+
+
+.popup-new-tab:hover {
+  background: #e4e4e4;
+
+  transform:
+    scale(1.05);
+}
+
+
+/* =====================================================
+   CLOSE BUTTON
+===================================================== */
+
+.popup-close {
+  /* width: 38px; */
+  /* height: 38px; */
+
+  border: 0;
+
+  border-radius: 8px;
+
+  background: transparent;
+
+  color: #222222;
+
+  font-size: 28px;
+
+  line-height: 1;
+
+  cursor: pointer;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease;
+}
+
+
+.popup-close:hover {
+  background: transparent;
+
+  color: #e00000;
+
+  transform:
+    scale(1.05);
+}
+
+
+/* =====================================================
+   IFRAME WRAPPER
+===================================================== */
+
+.website-iframe-wrapper {
+  position: absolute;
+
+  inset: 0;
+
+  width: 100%;
+  height: 100%;
+
+  background: #ffffff;
+
+  overflow: hidden;
+}
+
+
+/* =====================================================
+   IFRAME
+===================================================== */
+
+.website-iframe {
+  width: 100%;
+  height: 100%;
+
+  border: none;
+
+  display: block;
+
+  background: #ffffff;
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 768px) {
+
+  .mainlogopage {
+    height: 100vh;
+
+    padding: 8px;
+  }
+
+
+  .logo-click-area {
+    width: 65px;
+    height: 65px;
+  }
+
+
+  .brandlogo1 {
+    width: 65px;
+  }
+
+
+  .centertext h2 {
+    font-size: 11px;
+  }
+
+
+  .website-popup-overlay {
+    padding: 10px;
+  }
+
+
+  .website-popup {
+    width: 100%;
+
+    height: 94vh;
+
+    border-radius: 10px;
+  }
+
+
+  .website-popup-header {
+    min-height: 52px;
+
+    padding:
+      0 10px 0 14px;
+  }
+
+
+  .website-popup-title {
+    font-size: 14px;
+  }
+
+
+  .popup-new-tab,
+  .popup-close {
+    width: 34px;
+    height: 34px;
+  }
+}
