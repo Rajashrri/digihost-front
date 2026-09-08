@@ -477,6 +477,19 @@ const LogoWall = () => {
     };
   }, [isPopupOpen]);
 
+  const [showCenterText, setShowCenterText] =
+  useState(true);
+
+    useEffect(() => {
+      const timer = setTimeout(() => {
+        setShowCenterText(false);
+      }, 4000);
+
+      return () => {
+        clearTimeout(timer);
+      };
+    }, []);
+
   /* ===================================================
      JSX
   =================================================== */
@@ -535,11 +548,13 @@ const LogoWall = () => {
               CENTER TEXT
           ========================================== */}
 
-          <div className="centertext">
-            <h2>
-             Click on any logo 
-            </h2>
-          </div>
+  <div className="centertext">
+        
+    <h2 className={`${showCenterText ? "hide" : "show"}`}>
+      Click on any logo
+    </h2>
+
+  </div>
 
         </div>
       </section>

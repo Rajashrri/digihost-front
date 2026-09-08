@@ -5425,7 +5425,7 @@ background-size: 100%;
   left: 0;
 
   width: 1400px;
-  height: 1088px;
+  height: 1000px;
 
   pointer-events: none;
 
@@ -5577,7 +5577,7 @@ letter-spacing: -0.4px;
   position: relative;
 
   width: 70vw;
-  height: 100vh;
+  height: 95vh;
 
   max-width: 1600px;
 
@@ -5807,6 +5807,21 @@ letter-spacing: -0.4px;
   display: block;
 
   background: #ffffff;
+}
+.centertext {
+  animation: hideCenterText 0.5s ease 4s forwards;
+  transition: all .3s linear;
+}
+
+@keyframes hideCenterText {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
 }
 
 
