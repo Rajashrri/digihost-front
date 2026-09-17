@@ -13,6 +13,7 @@ import l10 from "../assets/logos/l10.png";
 import l11 from "../assets/logos/l11.svg";
 import l12 from "../assets/logos/l12.png";
 import l13 from "../assets/logos/l13.svg";
+import video1 from "../assets/logos/video1.mp4";
 
 /* =====================================================
    LOGOS
@@ -22,67 +23,67 @@ const logos = [
   {
     title: "Logo 1",
     imgurl: l1,
-    url: "https://drgaikwad.com/",
+    url: video1,
   },
   {
     title: "Logo 2",
     imgurl: l2,
-    url: "https://drgaikwad.com/",
+    url: video1,
   },
   {
     title: "Logo 3",
     imgurl: l3,
-    url: "https://drgaikwad.com/",
+    url:video1,
   },
   {
     title: "Logo 4",
     imgurl: l4,
-    url: "https://drgaikwad.com/",
+    url: video1,
   },
   {
     title: "Logo 5",
     imgurl: l5,
-    url: "https://drgaikwad.com/",
+    url: video1,
   },
   {
     title: "Logo 6",
     imgurl: l6,
-    url: "https://drgaikwad.com/",
+    url: video1,
   },
   {
     title: "Logo 7",
     imgurl: l7,
-    url: "https://drgaikwad.com/",
+    url: video1,
   },
   {
     title: "Logo 8",
     imgurl: l8,
-    url: "https://drgaikwad.com/",
+    url: video1,
   },
   {
     title: "Logo 9",
     imgurl: l9,
-    url: "https://drgaikwad.com/",
+    url: video1,
   },
   {
     title: "Logo 10",
     imgurl: l10,
-    url: "https://drgaikwad.com/",
+    url: video1,
   },
   {
     title: "Logo 11",
     imgurl: l11,
-    url: "https://drgaikwad.com/",
+    url: video1,
   },
   {
     title: "Logo 12",
     imgurl: l12,
-    url: "https://drgaikwad.com/",
+    url: video1,
   },
   {
     title: "Logo 13",
     imgurl: l13,
-    url: "https://drgaikwad.com/",
+    url: video1,
   },
 ];
 
@@ -642,30 +643,7 @@ const LogoWall = () => {
 
             <div className="website-iframe-wrapper">
 
-              <iframe
-                key={selectedUrl}
-
-                src={selectedUrl}
-
-                title={
-                  selectedTitle ||
-                  "Website Preview"
-                }
-
-                className="website-iframe"
-
-                allow="
-                  accelerometer;
-                  autoplay;
-                  clipboard-write;
-                  encrypted-media;
-                  gyroscope;
-                  picture-in-picture;
-                  fullscreen
-                "
-
-                allowFullScreen
-              />
+           <video src={selectedUrl} autoPlay loop muted playsInline controls={false} style={{ width: "100%", height: "100%", objectFit: "cover", }} />
 
             </div>
 

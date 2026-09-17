@@ -5576,8 +5576,8 @@ letter-spacing: -0.4px;
 .website-popup {
   position: relative;
 
-  width: 70vw;
-  height: 95vh;
+    width: 78vw;
+    height: 91vh;
 
   max-width: 1600px;
 
@@ -5791,6 +5791,9 @@ letter-spacing: -0.4px;
   background: #ffffff;
 
   overflow: hidden;
+}
+.website-iframe-wrapper video{
+  width: 100%;
 }
 
 
