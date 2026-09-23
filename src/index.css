@@ -5440,8 +5440,8 @@ background-size: 100%;
 .logo-click-area {
   position: absolute;
 
-  width: 90px;
-  height: 90px;
+  /* width: 90px; */
+  height: 65px;
 
   display: flex;
 
@@ -5466,7 +5466,7 @@ background-size: 100%;
 ===================================================== */
 
 .brandlogo1 {
-  width: 90px;
+  /* width: 90px; */
   height: auto;
 
   max-width: 100%;
@@ -5788,12 +5788,13 @@ letter-spacing: -0.4px;
   width: 100%;
   height: 100%;
 
-  background: #ffffff;
+  /* background: #ffffff; */
 
   overflow: hidden;
 }
 .website-iframe-wrapper video{
   width: 100%;
+  object-position: top;
 }
 
 
@@ -5809,7 +5810,7 @@ letter-spacing: -0.4px;
 
   display: block;
 
-  background: #ffffff;
+  /* background: #ffffff; */
 }
 .centertext {
   animation: hideCenterText 0.5s ease 4s forwards;

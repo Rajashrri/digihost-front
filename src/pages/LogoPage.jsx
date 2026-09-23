@@ -1,19 +1,36 @@
 import React, { useEffect, useRef, useState } from "react";
 
-import l1 from "../assets/logos/l1.svg";
-import l2 from "../assets/logos/l2.svg";
-import l3 from "../assets/logos/l3.png";
-import l4 from "../assets/logos/l4.png";
-import l5 from "../assets/logos/l5.svg";
-import l6 from "../assets/logos/l6.svg";
-import l7 from "../assets/logos/l7.svg";
-import l8 from "../assets/logos/l8.svg";
-import l9 from "../assets/logos/l9.svg";
-import l10 from "../assets/logos/l10.png";
-import l11 from "../assets/logos/l11.svg";
-import l12 from "../assets/logos/l12.png";
-import l13 from "../assets/logos/l13.svg";
+import airithim1 from "../assets/logos/airithim.png";
+import Akirhs1 from "../assets/logos/Akirhs.png";
+import ccp1 from "../assets/logos/ccp.png";
+import DrGaikwad1 from "../assets/logos/DrGaikwad.png";
+import globus1 from "../assets/logos/globus.png";
+import Lanova1 from "../assets/logos/Lanova.png";
+import Loma1 from "../assets/logos/Loma.png";
+import Lotus1 from "../assets/logos/Lotus.png";
+import NairCA1 from "../assets/logos/NairCA.png";
+import neostar1 from "../assets/logos/neostar.png";
+import poojalad1 from "../assets/logos/poojalad.png";
+import Rbs1 from "../assets/logos/Rbs.png";
+import RDVIt1 from "../assets/logos/RDVIt.png";
+import ronak1 from "../assets/logos/ronak.png";
+import Soupherb1 from "../assets/logos/Soupherb.png";
 import video1 from "../assets/logos/video1.mp4";
+import Airithm from "../assets/logos/Airithm.mp4";
+import GlobusHomepage from "../assets/logos/GlobusHomepage.mp4";
+import CaNair from "../assets/logos/CaNair.mp4";
+import LaNova from "../assets/logos/LaNova.mp4";
+import LotusDevelopers from "../assets/logos/LotusDevelopers.mp4";
+import RonakAdv from "../assets/logos/RonakAdv.mp4";
+import akirahs from "../assets/logos/akirahs.mp4";
+import RBS from "../assets/logos/RBS.mp4";
+import CCP from "../assets/logos/CCP.mp4";
+import LomaDental from "../assets/logos/LomaDental.mp4";
+import RDVIT from "../assets/logos/RDVIT.mp4";
+import DrGaikwad from "../assets/logos/DrGaikwad.mp4";
+import PoojaLadAssociates from "../assets/logos/PoojaLadAssociates.mp4";
+import Soupherb from "../assets/logos/Soupherb.mp4";
+import Neostar from "../assets/logos/Neostar.mp4";
 
 /* =====================================================
    LOGOS
@@ -21,69 +38,84 @@ import video1 from "../assets/logos/video1.mp4";
 
 const logos = [
   {
-    title: "Logo 1",
-    imgurl: l1,
-    url: video1,
+    title: "Dr.Gaikwad ",
+    imgurl: DrGaikwad1,
+    url: DrGaikwad,
   },
   {
-    title: "Logo 2",
-    imgurl: l2,
-    url: video1,
+    title: "Soupherb",
+    imgurl: Soupherb1,
+    url: Soupherb,
   },
   {
-    title: "Logo 3",
-    imgurl: l3,
-    url:video1,
+    title: "Loma Dental",
+    imgurl: Loma1,
+    url:LomaDental,
   },
   {
-    title: "Logo 4",
-    imgurl: l4,
-    url: video1,
+    title: "RDV IT",
+    imgurl: RDVIt1,
+    url: RDVIT,
   },
   {
-    title: "Logo 5",
-    imgurl: l5,
-    url: video1,
+    title: "Lotus Developers",
+    imgurl: Lotus1,
+    url: LotusDevelopers,
   },
   {
-    title: "Logo 6",
-    imgurl: l6,
-    url: video1,
+    title: "Neostar website",
+    imgurl: neostar1,
+    url: Neostar,
   },
   {
-    title: "Logo 7",
-    imgurl: l7,
-    url: video1,
+    title: "Akirhs website",
+    imgurl: Akirhs1,
+    url: akirahs,
+  },
+  // {
+  //   title: "Lotus",
+  //   imgurl: Lotus1,
+  //   url: video1,
+  // },
+  {
+    title: "CCP",
+    imgurl: ccp1,
+    url: CCP,
   },
   {
-    title: "Logo 8",
-    imgurl: l8,
-    url: video1,
+    title: "Pooja Lad & Associates",
+    imgurl: poojalad1,
+    url: PoojaLadAssociates,
   },
   {
-    title: "Logo 9",
-    imgurl: l9,
-    url: video1,
+    title: "CA Nair",
+    imgurl: NairCA1,
+    url: CaNair,
   },
   {
-    title: "Logo 10",
-    imgurl: l10,
-    url: video1,
+    title: "La nova",
+    imgurl: Lanova1,
+    url: LaNova,
   },
   {
-    title: "Logo 11",
-    imgurl: l11,
-    url: video1,
+    title: "Rekha Bright Steels",
+    imgurl: Rbs1,
+    url: RBS,
   },
   {
-    title: "Logo 12",
-    imgurl: l12,
-    url: video1,
+    title: "Ronak Advertising",
+    imgurl: ronak1,
+    url: RonakAdv,
   },
   {
-    title: "Logo 13",
-    imgurl: l13,
-    url: video1,
+    title: "Globus",
+    imgurl: globus1,
+    url: GlobusHomepage,
+  },
+  {
+    title: "Airithm",
+    imgurl: airithim1,
+    url: Airithm,
   },
 ];
 
@@ -97,25 +129,28 @@ const TILE_HEIGHT = 1000;
 /* =====================================================
    LOGO POSITIONS
 ===================================================== */
-
+/* =====================================================
+   LOGO POSITIONS — 16 LOGOS
+===================================================== */
 const logoPositions = [
-  { top: 100, left: 100 },
-  { top: 120, left: 450 },
-  { top: 80, left: 700 },
-  { top: 120, left: 1100 },
-
-  { top: 350, left: 250 },
-  { top: 340, left: 500 },
-  { top: 330, left: 850 },
-  { top: 350, left: 1100 },
-
-  { top: 550, left: 100 },
-  { top: 520, left: 650 },
-  { top: 540, left: 900 },
-
-  { top: 700, left: 600 },
-  { top: 720, left: 1100 },
+     { top: 100, left: 100 },
+     { top: 120, left: 450 },   
+     { top: -80, left: 700 },   
+     { top: -20, left: 1100 },   
+     { top: 350, left: 250 },   
+     { top: 340, left: 500 },   
+     { top: 330, left: 850 },   
+     { top: 350, left: 1100 },   
+     { top: 550, left: 100 },   
+     { top: 520, left: 650 },   
+     { top: 600, left: 900 },   
+     { top: 690, left: 400 },   
+     { top: 256, left: 0 },
+     { top: 80, left: 900 },
+     { top: 220, left: 700 },
+     { top: 620, left: 1200 },
 ];
+
 
 /* =====================================================
    TILE POSITIONS
@@ -643,7 +678,7 @@ const LogoWall = () => {
 
             <div className="website-iframe-wrapper">
 
-           <video src={selectedUrl} autoPlay loop muted playsInline controls={false} style={{ width: "100%", height: "100%", objectFit: "cover", }} />
+           <video src={selectedUrl} autoPlay loop muted playsInline controls={false} style={{ width: "100%", height: "100%", objectFit: "contain", }} />
 
             </div>
 
