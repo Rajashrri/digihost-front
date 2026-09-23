@@ -5582,7 +5582,7 @@ letter-spacing: -0.4px;
 
   max-width: 1600px;
 
-  background: #ffffff;
+  /* background: #ffffff; */
 
   border-radius: 14px;
 
@@ -5844,13 +5844,13 @@ letter-spacing: -0.4px;
 
 
   .logo-click-area {
-    width: 65px;
-    height: 65px;
+    width: 77px;
+    height: 77px;
   }
 
 
   .brandlogo1 {
-    width: 65px;
+    width: 77px;
   }
 
 
@@ -5861,6 +5861,9 @@ letter-spacing: -0.4px;
 
   .website-popup-overlay {
     padding: 10px;
+  }
+  .website-iframe-wrapper video{
+    object-position: center;
   }
 
 
