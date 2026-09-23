@@ -4692,6 +4692,7 @@ bottom: 20%;
   .culture-side h2{
     font-size: 32px;
   }
+
   .youwill .willbox:first-child,
   .youwill .willbox,
   .youwill .willbox:last-child {
@@ -5891,3 +5892,11 @@ letter-spacing: -0.4px;
     height: 34px;
   }
 }
+
+@media (max-width: 480px) {
+  .logo-tile{
+    width: 600px;
+  /* background: red; */
+    height: 600px;
+  }
+  }

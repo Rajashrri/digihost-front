@@ -123,8 +123,6 @@ const logos = [
    TILE SIZE
 ===================================================== */
 
-const TILE_WIDTH = 1400;
-const TILE_HEIGHT = 1000;
 
 /* =====================================================
    LOGO POSITIONS
@@ -133,23 +131,48 @@ const TILE_HEIGHT = 1000;
    LOGO POSITIONS — 16 LOGOS
 ===================================================== */
 const logoPositions = [
-     { top: 100, left: 100 },
-     { top: 120, left: 450 },   
-     { top: -80, left: 700 },   
-     { top: -20, left: 1100 },   
-     { top: 350, left: 250 },   
-     { top: 340, left: 500 },   
-     { top: 330, left: 850 },   
-     { top: 350, left: 1100 },   
-     { top: 550, left: 100 },   
-     { top: 520, left: 650 },   
-     { top: 600, left: 900 },   
-     { top: 690, left: 400 },   
-     { top: 256, left: 0 },
-     { top: 80, left: 900 },
-     { top: 220, left: 700 },
-     { top: 620, left: 1200 },
+  { top: 100, left: 100 },
+  { top: 120, left: 450 },
+  { top: -80, left: 700 },
+  { top: -20, left: 1100 },
+  { top: 350, left: 250 },
+  { top: 340, left: 500 },
+  { top: 330, left: 850 },
+  { top: 350, left: 1100 },
+  { top: 550, left: 100 },
+  { top: 520, left: 650 },
+  { top: 600, left: 900 },
+  { top: 690, left: 400 },
+  { top: 256, left: 0 },
+  { top: 80, left: 900 },
+  { top: 220, left: 700 },
+  { top: 620, left: 1200 },
 ];
+
+const mobileLogoPositions = [
+  { top: 80, left: 20 },
+  { top: 80, left: 190 },
+  { top: 150, left: 100 },
+  { top: 150, left: 270 },
+  { top: 270, left: 20 },
+  { top: 270, left: 190 },
+  { top: 380, left: 100 },
+  { top: 380, left: 270 },
+  { top: 500, left: 20 },
+  { top: 500, left: 190 },
+  { top: 610, left: 100 },
+  { top: 610, left: 270 },
+  { top: 730, left: 20 },
+  { top: 730, left: 190 },
+  { top: 840, left: 100 },
+  { top: 840, left: 270 },
+];
+
+const isMobile = window.innerWidth <= 768;
+
+const positions = isMobile
+  ? mobileLogoPositions
+  : logoPositions;
 
 
 /* =====================================================
@@ -190,7 +213,7 @@ const LogoTile = ({ x, y, onLogoClick }) => {
       data-y={y}
     >
       {logos.map((logo, index) => {
-        const position = logoPositions[index];
+   const position = positions[index];
 
         return (
           <div
@@ -272,6 +295,36 @@ const LogoWall = () => {
   /* ===================================================
      UPDATE WORLD
   =================================================== */
+
+
+
+   const [isMobile, setIsMobile] = useState(
+    window.innerWidth <= 768
+  );
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
+  const positions = isMobile
+    ? mobileLogoPositions
+    : logoPositions;
+
+    
+const TILE_WIDTH = isMobile ? 400 : 1400;
+const TILE_HEIGHT = isMobile ? 950 : 1000;
+
+
+
+    // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++=
 
   const updateWorld = () => {
     if (!worldRef.current) {
