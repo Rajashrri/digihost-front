@@ -5890,7 +5890,8 @@ letter-spacing: -0.4px;
 
 
   .popup-new-tab,
-  .popup-close {
+  .popup-close,
+  .popup-close svg {
     width: 80px;
     height: 80px;
   }
