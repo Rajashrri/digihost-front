@@ -5839,7 +5839,7 @@ letter-spacing: -0.4px;
   .mainlogopage {
     height: 100vh;
 
-    padding: 8px;
+    padding: 0px;
   }
 
 
@@ -5891,8 +5891,8 @@ letter-spacing: -0.4px;
 
   .popup-new-tab,
   .popup-close {
-    width: 34px;
-    height: 34px;
+    width: 80px;
+    height: 80px;
   }
 }
 

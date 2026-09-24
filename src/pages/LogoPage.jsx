@@ -276,6 +276,11 @@ const LogoWall = () => {
   const offsetX = useRef(0);
   const offsetY = useRef(0);
 
+  const targetX = useRef(0);
+const targetY = useRef(0);
+
+const animationFrame = useRef(null);
+
   /* ===================================================
      POPUP STATE
   =================================================== */
@@ -325,6 +330,21 @@ const TILE_HEIGHT = isMobile ? 950 : 1000;
 
 
     // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++=
+
+    const smoothScroll = () => {
+  const ease = 0.08; // lower = more delay, higher = faster
+
+  offsetX.current +=
+    (targetX.current - offsetX.current) * ease;
+
+  offsetY.current +=
+    (targetY.current - offsetY.current) * ease;
+
+  updateWorld();
+
+  animationFrame.current =
+    requestAnimationFrame(smoothScroll);
+};
 
   const updateWorld = () => {
     if (!worldRef.current) {
@@ -387,8 +407,8 @@ const TILE_HEIGHT = isMobile ? 950 : 1000;
     startX.current = e.clientX;
     startY.current = e.clientY;
 
-    currentX.current = offsetX.current;
-    currentY.current = offsetY.current;
+currentX.current = targetX.current;
+currentY.current = targetY.current;
 
     viewportRef.current?.classList.add(
       "is-dragging"
@@ -405,32 +425,106 @@ const TILE_HEIGHT = isMobile ? 950 : 1000;
      POINTER MOVE
   =================================================== */
 
+  // const handlePointerMove = (e) => {
+  //   if (!isDragging.current) {
+  //     return;
+  //   }
+
+  //   const moveX =
+  //     e.clientX - startX.current;
+
+  //   const moveY =
+  //     e.clientY - startY.current;
+
+  //   if (
+  //     Math.abs(moveX) > 5 ||
+  //     Math.abs(moveY) > 5
+  //   ) {
+  //     hasDragged.current = true;
+  //   }
+
+  //   offsetX.current =
+  //     currentX.current + moveX;
+
+  //   offsetY.current =
+  //     currentY.current + moveY;
+
+  //   updateWorld();
+  // };
+
   const handlePointerMove = (e) => {
-    if (!isDragging.current) {
-      return;
-    }
+  if (!isDragging.current) {
+    return;
+  }
 
-    const moveX =
-      e.clientX - startX.current;
+  const moveX =
+    e.clientX - startX.current;
 
-    const moveY =
-      e.clientY - startY.current;
+  const moveY =
+    e.clientY - startY.current;
 
-    if (
-      Math.abs(moveX) > 5 ||
-      Math.abs(moveY) > 5
-    ) {
-      hasDragged.current = true;
-    }
+  if (
+    Math.abs(moveX) > 5 ||
+    Math.abs(moveY) > 5
+  ) {
+    hasDragged.current = true;
+  }
 
-    offsetX.current =
-      currentX.current + moveX;
+  targetX.current =
+    currentX.current + moveX;
 
-    offsetY.current =
-      currentY.current + moveY;
+  targetY.current =
+    currentY.current + moveY;
 
-    updateWorld();
-  };
+    /* =================================================
+   HEADER SHOW / HIDE
+================================================= */
+
+if (Math.abs(moveX) > Math.abs(moveY)) {
+  if (moveX < 0) {
+    // Drag left
+    window.dispatchEvent(
+      new CustomEvent("logoWallScroll", {
+        detail: {
+          direction: "down",
+        },
+      })
+    );
+  } else if (moveX > 0) {
+    // Drag right
+    window.dispatchEvent(
+      new CustomEvent("logoWallScroll", {
+        detail: {
+          direction: "up",
+        },
+      })
+    );
+  }
+} else {
+  if (moveY < 0) {
+    // Drag up
+    window.dispatchEvent(
+      new CustomEvent("logoWallScroll", {
+        detail: {
+          direction: "down",
+        },
+      })
+    );
+  } else if (moveY > 0) {
+    // Drag down
+    window.dispatchEvent(
+      new CustomEvent("logoWallScroll", {
+        detail: {
+          direction: "up",
+        },
+      })
+    );
+  }
+}
+
+};
+
+
 
   /* ===================================================
      POINTER UP
@@ -544,11 +638,26 @@ const TILE_HEIGHT = isMobile ? 950 : 1000;
   /* ===================================================
      INITIAL WORLD POSITION
   =================================================== */
-
   useEffect(() => {
-    updateWorld();
-  }, []);
+  animationFrame.current =
+    requestAnimationFrame(smoothScroll);
 
+  return () => {
+    if (animationFrame.current) {
+      cancelAnimationFrame(animationFrame.current);
+    }
+  };
+}, []);
+
+useEffect(() => {
+  targetX.current = 0;
+  targetY.current = 0;
+
+  offsetX.current = 0;
+  offsetY.current = 0;
+
+  updateWorld();
+}, []);
   /* ===================================================
      BODY SCROLL LOCK
   =================================================== */
@@ -572,6 +681,7 @@ const TILE_HEIGHT = isMobile ? 950 : 1000;
     useEffect(() => {
       const timer = setTimeout(() => {
         setShowCenterText(false);
+        
       }, 4000);
 
       return () => {
